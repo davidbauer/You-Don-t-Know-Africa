@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<head>
+<!--
+/*
+ * Click That ’Hood
+ *
+ * Front-end (mostly) by Marcin Wichary, Code for America fellow in 2013.
+ *
+ * Note: This code is really gnarly. It’s been done under a lot of time 
+ * pressure and there’s a lot of shortcut and tech debt. It might be improved
+ * later if there’s time later.
+ *
+ * Note 2: Code made even worse by David Bauer, who is more of a journalist than a coder. ¯\_(ツ)_/¯
+ */
+-->
+
+  <title>You Don't Know Africa</title>
+  <meta charset='utf-8'>
+
+  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+  <meta name="description" content="A geography game about Africa that will probably embarrass you. Try it yourself." />
+  <meta name="author" content="David Bauer" />
+  <meta name="Content-Language" content="en" />
+  <meta name="keywords" content="Africa, Game, Countries, You Don't Know Africa, Click that Hood" />
+  
+  <meta name="google-site-verification" content="NIQf1dkbS1GEEwBoNAr3FiSfoFRFZILdt0Ap1Hen0z4" />
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+  <link href='public/css/styles.css' rel='stylesheet' type='text/css'> 
+<!--   <link href='public/css/mapbox.css' rel='stylesheet' type='text/css'>  -->
+<!--   <link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css' rel='stylesheet'> -->
+ 
+  <!-- Facebook metadata -->
+  <meta property="og:title" content="[PLAY NOW] You Don't Know Africa"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="http://www.youdontknowafrica.com"/>
+  <meta property="og:image" content="http://youdontknowafrica.com/public/images/teaser.png"/>
+  <meta property="og:image:width" content="1867">
+  <meta property="og:image:height" content="935">
+  <meta property="fb:app_id" content="777235462302407" />
+  <meta property="og:description" content="Find all African countries as quick as you can. It's harder than you might think."/>
+   
+   <!-- Twitter metadata -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:creator" content="@davidbauer">
+	<meta name="twitter:title" content="You Don't Know Africa [PLAY NOW]">
+	<meta name="twitter:description" content="Find all African countries as quick as you can. It's harder than you might think.">
+	<meta name="twitter:image" content="http://youdontknowafrica.com/public/images/teaser.png">
+    
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="public/images/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="public/images/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="public/images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="public/images/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="public/images/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="public/images/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="public/images/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="public/images/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="public/images/favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="public/images/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="public/images/favicons/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="public/images/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="public/images/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="public/images/favicons/manifest.json">
+	<link rel="mask-icon" href="public/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	
+	<!-- iOs webapp settings -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-title" content="You Don't Know Africa">
+	
+	<!-- Android webapp settings -->
+	<meta name="mobile-web-app-capable" content="yes">	
+	
+		<!-- iPhone 6 Plus portrait startup image -->
+    <link href="public/images/startup-images/startup-image-1242x2148.png"
+          media="(device-width: 414px) and (device-height: 736px)
+                 and (-webkit-device-pixel-ratio: 3)
+                 and (orientation: portrait)"
+          rel="apple-touch-startup-image">
+
+    <!-- iPhone 6 startup image -->
+    <link href="public/images/startup-images/startup-image-750×1294.png"
+          media="(device-width: 375px) and (device-height: 667px)
+                 and (-webkit-device-pixel-ratio: 2)"
+          rel="apple-touch-startup-image">
+
+    <!-- iPhone 5 startup image -->
+    <link href="public/images/startup-images/startup-image-640x1096.png"
+          media="(device-width: 320px) and (device-height: 568px)
+                 and (-webkit-device-pixel-ratio: 2)"
+          rel="apple-touch-startup-image">
+
+    
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18717219-7', 'youdontknowafrica.com');
+  ga('send', 'pageview');
+
+  </script>
+
+
+</head>
+
+<body>
+
+  <div id='wrong-browser' style='display: none'>
+    We’re sorry, but You Don't Know Africa requires a newer browser. Learn more
+    about how to get one at <a href='http://browsehappy.com/'>Browse
+    Happy</a>.
+  </div>
+
+  <div class='canvas'>
+    
+    <header class='game'>
+      
+      <div>
+        <span class='mainlogo'>You Don't Know Africa</span>       
+      </div>
+      <p class="powered">powered by</p>
+      <a href='https://www.click-that-hood.com' target="_blank"><img alt='Click that ’hood' class='logo' src='public/images/logo.png'></a>      
+    
+    </header>
+    
+    <div id="sharing">
+	  
+		<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fyoudontknowafrica.com%2F&amp;width=50&amp;layout=box_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=65&amp;appId=777235462302407" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowTransparency="true"></iframe>
+  	
+  	</div>
+
+    <div id='map'>
+
+      <div id='svg-container'></div>
+      <div id='maps-background'></div>
+    
+      <div id='neighborhood-hover'>
+        <span></span>
+      </div>    
+
+      <div id='cover'>
+        <div id='loading'>
+          <div>
+            Loading…
+          </div>
+        </div>
+        <div id='intro'>
+          <div>
+	        <p>Played <span class="number-of-plays">more than a million</span> times. <br class="rwd-break">Be the next.</p>
+            <p>
+              <span class='click-verb capitalize'></span> on the correct country on the map as soon as its name comes up. The faster, the better!
+            </p>
+            <p>
+              <button onclick='startGame(true)'>Start the game<span>(<span class='easy-mode-count'></span> random countries)</span></button>
+              <span class='difficult-game'>
+                <br>
+                or
+                <br>
+                <button onclick='startGame(false)' class='smaller'>Start a difficult game (<span class='hard-mode-count'></span> 
+                countries<span class='neighborhoods-removed-disclaimer'>*</span>)</button>
+                <span class='neighborhoods-removed-disclaimer'>
+                  <br><sup>*</sup>We’ll only skip those countries that are too small to <span class='click-verb'></span>
+                </span>
+              </span>
+            </p>
+            
+<!--
+             <p class="herebeads">      
+	           <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- YDKA Mobile 
+				<ins class="adsbygoogle"
+				     style="display:inline-block;width:300px;height:60px"
+				     data-ad-client="ca-pub-2567108169425761"
+				     data-ad-slot="7281196332"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</p>
+-->
+			
+          </div>
+			
+        </div>
+
+        <div id='congrats-easy'>
+          <div>
+            <h1>
+              Congratulations! 
+            </h1>
+            <p>
+              You correctly identified
+              <br>
+              <span class='easy-mode-count'></span> 
+              countries
+              <br>in <span class='time'></span>!
+            </p>
+            <p>
+              <button onclick='reloadPage()'>Play again</button>
+            </p>
+            <p>
+              <a id='share-via-facebook' class='button smaller'>Share on Facebook</a>
+              <a id='share-via-whatsapp' class='button smaller'>Share via Whatsapp</a>
+              <a id='share-via-twitter' class='button smaller'>Share on Twitter</a>
+            </p>
+            <p>
+	            <a id='share-via-email' class='button smaller'>Share via Email</a>
+	            <span class="save-to-homescreen">Save the game to your homescreen and try again later</span>
+            </p>
+
+          </div>
+        </div>
+
+        <div id='congrats-hard'>
+          <div>
+            <h1>
+              Congratulations! 
+            </h1>
+            <p>
+              You correctly identified 
+              <br>
+              all countries
+              <br>in <span class='time'></span>!
+            </p>
+            <p>
+              <button onclick='reloadPage()'>Play again</button>
+            </p>
+            
+            <p>
+              <a id='share-via-facebook' class='button smaller'>Share on Facebook</a>
+              <a id='share-via-whatsapp' class='button smaller'>Share via Whatsapp</a>
+              <a id='share-via-twitter' class='button smaller'>Share on Twitter</a>
+            </p>
+            <p>
+	            <a id='share-via-email' class='button smaller'>Share via Email</a>
+	            <span class="save-to-homescreen">Save the game to your homescreen and try again later</span>
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <div id='neighborhood-guess-wrapper'>
+        <div id='neighborhood-guess'>
+          <span class='click-verb capitalize'></span>
+          <span class='name'></span>
+        </div>    
+      </div>
+
+      <div id='count-time-wrapper-wrapper'>
+        <div id='count-time-wrapper'>
+          <div id='count-time'>
+            <span id='count'></span>
+            <span class='time'></span>
+          </div>    
+        </div>
+      </div>
+
+      <div id='more-cities-wrapper-wrapper'>
+        <div id='more-cities-wrapper'>
+          <div>
+            …or scroll down for more locations to play.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class='menu'>
+    <div class='locations'>
+    </div>
+  </div>
+
+  <footer>
+    <span class='author'>
+        Brought to you by <a href="http://www.davidbauer.ch" target="_blank">David Bauer</a> (<a href="http://www.twitter.com/davidbauer">@davidbauer</a>).
+    </span>
+    Code:
+    <a target='_blank' 
+        href='http://www.codeforamerica.org'>Code for America</a> (<a target='_blank' 
+        href='https://github.com/codeforamerica/click_that_hood'>Source code</a>).
+    <span class='data'>    
+      <span class='data-source'>
+        Data from <a href="http://geocommons.com/" target='_blank'>Geocommons</a>.
+      </span>
+    </span>
+    
+  </footer> 
+  
+<!--     <script src='https://api.tiles.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script> --> 
+  <script src='public/js/mapbox.js'></script>
+
+   <script src='public/js/d3.v3.min.js'></script>
+  <script src='public/js/queue.v1.min.js'></script>
+  <script src='public/js/topojson.v0.min.js'></script>
+   
+  <script src='public/js/modernizr.js'></script>
+  <script src='public/js/scripts.js'></script>
+  <script src='public/js/data.js'></script> 
+  
+  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+  <script>var myDataRef = new Firebase('https://ydka.firebaseio.com/');</script>
+
+  <script>
+    main();
+  </script>
+</body>
