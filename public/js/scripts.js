@@ -20,7 +20,7 @@ var NEXT_GUESS_DELAY = 500;
 
 var REMOVE_NEIGHBORHOOD_ANIMATE_GUESS_DELAY = 1000;
 
-var SMALL_NEIGHBORHOOD_THRESHOLD_MOUSE = 8;
+var SMALL_NEIGHBORHOOD_THRESHOLD_MOUSE = 5;
 var SMALL_NEIGHBORHOOD_THRESHOLD_TOUCH = 25;
 
 var HEADER_WIDTH = 320;
@@ -69,6 +69,7 @@ var lastTouchedNeighborhoodEl;
 var pixelRatio;
 
 var smallNeighborhoodThreshold;
+var smallNeighborhoodsRemoved = [];
 
 var canvasWidth, canvasHeight;
 var mapWidth, mapHeight;
@@ -236,11 +237,14 @@ function removeSmallNeighborhoods() {
 
     if ((boundingBox.width < smallNeighborhoodThreshold) || 
         (boundingBox.height < smallNeighborhoodThreshold)) {
+      
       var name = el.getAttribute('name');
 
       neighborhoods.splice(neighborhoods.indexOf(name), 1);
 
       makeNeighborhoodInactive(name);
+      
+      smallNeighborhoodsRemoved.push(name)
 
       totalNeighborhoodsCount--;
 
@@ -250,8 +254,20 @@ function removeSmallNeighborhoods() {
 
   if (someSmallNeighborhoodsRemoved) {
     document.body.classList.add('neighborhoods-removed');
+    updateSmallNeighborhoodDisplay();
   } else {    
     document.body.classList.remove('neighborhoods-removed');
+  }
+}
+
+function updateSmallNeighborhoodDisplay() {
+  var count = smallNeighborhoodsRemoved.length
+  var no = Math.floor(Math.random() * count)
+
+  var els = document.querySelectorAll('.small-neighborhood-example')
+
+  for (var i = 0, el; el = els[i]; i++) {
+    el.innerHTML = smallNeighborhoodsRemoved[no]
   }
 }
 
@@ -686,6 +702,7 @@ function nextGuess() {
 function startIntro() {
   document.querySelector('#loading').classList.remove('visible');
   document.querySelector('#intro').classList.add('visible');
+  document.querySelector('#mobilelogo').classList.add('mobilevisible');
 }
 
 function makeAllNeighborhoodsActive() {
@@ -741,7 +758,7 @@ function fillNumberOfPlays() {
 var els = document.querySelectorAll('span.number-of-plays');
 
 // pretty dumb workaround to make sure a manipulated counter isn't displayed
-if (typeof numberOfPlays === 'number' && numberOfPlays > 1287668 && numberOfPlays < 2000000 ) {
+if (typeof numberOfPlays === 'number' && numberOfPlays > 1451400 && numberOfPlays < 2000000 ) {
   for (var i = 0, el; el = els[i]; i++) {
   el.innerHTML = numberOfPlays.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "&thinsp;");;
   };	
@@ -749,7 +766,7 @@ if (typeof numberOfPlays === 'number' && numberOfPlays > 1287668 && numberOfPlay
 
 else {
   for (var i = 0, el; el = els[i]; i++) {
-  el.innerHTML = "1287669";
+  el.innerHTML = "1451408";
 };
 
 }
@@ -767,7 +784,8 @@ function startGame(useEasyMode) {
   
   updatePlaysCount();
   
-  document.querySelector('#intro').classList.remove('visible');  
+  document.querySelector('#intro').classList.remove('visible');
+  document.querySelector('#mobilelogo').classList.remove('mobilevisible');  
   document.querySelector('#cover').classList.remove('visible');
 
   neighborhoodsToBeGuessed = [];
@@ -1076,11 +1094,6 @@ function prepareLocationList() {
       html += '</a>';
       el.innerHTML = html;
 
-/*
-      el.querySelector('a').addEventListener('mouseover', animateMainMenuCity, false);
-      el.querySelector('a').addEventListener('mouseout', restoreMainMenuCity, false);
-*/
-
       document.querySelector('.menu .locations').appendChild(el);
     }
   }
@@ -1207,6 +1220,7 @@ function main() {
     onResize();
 
     document.querySelector('#cover').classList.add('visible');
+/*     document.querySelector('#mobilelogo').classList.add('mobilevisible'); */
     document.querySelector('#loading').classList.add('visible');
 
 	loadGeoData();

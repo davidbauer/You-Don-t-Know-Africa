@@ -4,19 +4,14 @@
   font-display: auto;
   src: url('../fonts/Homestead-Regular.ttf');
 }
-@font-face {
-  font-family: 'Wisdom Script';
-  font-display: auto;
-  src: url('../fonts/Wisdom-Script.otf');
-}
 html {
   height: 100%;
+    font-family: 'Homestead', Arial, Helvetica, sans-serif;
 }
 body {
   background: #415353;
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-size: 14px;
   overflow-x: hidden;
   min-height: 100%;
@@ -32,10 +27,10 @@ body {
 
 header.game {
   position: absolute;
-  top: 10%;
-  left: 15px;
-  width: 320px;
   color: white;
+	top: 10%;
+	left: 15px;
+	width: 320px;
   text-shadow: 0 0 2px black,
                0 0 5px black;
   z-index: 10000;
@@ -47,7 +42,6 @@ body.no-difficult-game .difficult-game {
 header.game .mainlogo {
   display: inline-block;
   font-weight: normal;
-  font-family: 'Homestead';
   font-size: 60px;
   line-height: .9;
   letter-spacing: 1px;
@@ -429,7 +423,6 @@ a.button {
   font-weight: 600;
   padding: 10px 50px;
   margin: 0;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   border: none;
   border-radius: 5px;
   background: #f89f34;
@@ -440,6 +433,7 @@ a.button {
   text-shadow: none;
   text-decoration: none;
   cursor: pointer;
+  font-family: 'Homestead', Arial, Helvetica, sans-serif;
 }
 button:hover,
 a.button:hover {
@@ -454,6 +448,17 @@ a.button.smaller {
   font-weight: 400;
   padding: 10px 20px;
   font-size: 60%;
+}
+
+ul.sharebuttons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.sharebuttons li {
+	display: block;
+	margin-bottom: 12px;
 }
 
 #share-via-facebook {
@@ -510,8 +515,8 @@ p > :not(button) > .neighborhoods-removed-disclaimer sup {
 /* that's .intro */
 #cover > div {
   display: none;
-  width: 90%;
-  max-width: 500px;
+  width: 100%;
+/*   max-width: 500px; */
   vertical-align: middle;
 }
 
@@ -561,7 +566,6 @@ body:not(.neighborhoods-removed) .neighborhoods-removed-disclaimer {
   top: 0;
   padding: 3em 5em;
   z-index: 9999999;
-  font-family: Arial;
   font-size: 20px;
   color: white;
   background: #972929;
@@ -657,14 +661,21 @@ body:not(.neighborhoods-removed) .neighborhoods-removed-disclaimer {
 
 /* tablets and larger */
 @media only screen and (min-device-width : 736px) {
+	
 	#share-via-whatsapp {
 		display: none;
 	}
+	
 	br.rwd-break {
 	display:none;
 	}
+	
 	.save-to-homescreen {
 		display:none;
+	}
+	
+	#mobilelogo {
+		display: none;
 	}
 	
 }
@@ -761,10 +772,31 @@ body:not(.neighborhoods-removed) .neighborhoods-removed-disclaimer {
 		font-size: 80%;
 	}
 	
+	#mobilelogo.mobilevisible {
+	    position: absolute;
+		color: white;
+	text-shadow: 0 0 2px black,
+               0 0 5px black;
+  z-index: 10000;
+  text-align: center;
+	  
+	  display: inline-block;
+	  font-weight: normal;
+	  font-size: 45px;
+	  line-height: .9;
+	  letter-spacing: 1px;
+	  text-align: center;
+	  padding: 0;
+	  margin: 0;
+	  margin-top: 20px;
+	  text-rendering: optimizeLegibility;
+}
+	
 }
 
 /* webapp mode */
 @media all and (display-mode: standalone) {
+  
   #neighborhood-guess-wrapper {
 	  padding-top:20px;
 	}

@@ -15,11 +15,11 @@
  */
 -->
 
-  <title>You Don't Know Africa</title>
+  <title>You Don't Know Africa 🌍🧐</title>
   <meta charset='utf-8'>
 
   <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
-  <meta name="description" content="A geography game about Africa that will probably embarrass you. Try it yourself." />
+  <meta name="description" content="A geography game about Africa that will probably embarrass you. Try it and challenge your friends." />
   <meta name="author" content="David Bauer" />
   <meta name="Content-Language" content="en" />
   <meta name="keywords" content="Africa, Game, Countries, You Don't Know Africa, Click that Hood" />
@@ -28,25 +28,23 @@
 
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
   <link href='public/css/styles.css' rel='stylesheet' type='text/css'> 
-<!--   <link href='public/css/mapbox.css' rel='stylesheet' type='text/css'>  -->
-<!--   <link href='http://api.tiles.mapbox.com/mapbox.js/v0.6.7/mapbox.css' rel='stylesheet'> -->
  
   <!-- Facebook metadata -->
-  <meta property="og:title" content="[PLAY NOW] You Don't Know Africa"/>
+  <meta property="og:title" content="[PLAY NOW] You Don't Know Africa 🌍🧐"/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="http://www.youdontknowafrica.com"/>
-  <meta property="og:image" content="http://youdontknowafrica.com/public/images/teaser.png"/>
+  <meta property="og:image" content="https://youdontknowafrica.com/public/images/teaser.png"/>
   <meta property="og:image:width" content="1867">
   <meta property="og:image:height" content="935">
   <meta property="fb:app_id" content="777235462302407" />
-  <meta property="og:description" content="Find all African countries as quick as you can. It's harder than you might think."/>
+  <meta property="og:description" content="Find all African countries as quick as you can. It's harder than you  think."/>
    
    <!-- Twitter metadata -->
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:creator" content="@davidbauer">
 	<meta name="twitter:title" content="You Don't Know Africa [PLAY NOW]">
 	<meta name="twitter:description" content="Find all African countries as quick as you can. It's harder than you might think.">
-	<meta name="twitter:image" content="http://youdontknowafrica.com/public/images/teaser.png">
+	<meta name="twitter:image" content="https://youdontknowafrica.com/public/images/teaser.png">
     
   <!-- Icons -->
   <link rel="apple-touch-icon" sizes="57x57" href="public/images/favicons/apple-touch-icon-57x57.png">
@@ -115,7 +113,7 @@
 
   <div id='wrong-browser' style='display: none'>
     We’re sorry, but You Don't Know Africa requires a newer browser. Learn more
-    about how to get one at <a href='http://browsehappy.com/'>Browse
+    about how to get one at <a href='https://browsehappy.com/'>Browse
     Happy</a>.
   </div>
 
@@ -126,8 +124,8 @@
       <div>
         <span class='mainlogo'>You Don't Know Africa</span>       
       </div>
-      <p class="powered">powered by</p>
-      <a href='https://www.click-that-hood.com' target="_blank"><img alt='Click that ’hood' class='logo' src='public/images/logo.png'></a>      
+      <p class="powered">adapted from</p>
+      <a href='http://www.click-that-hood.com' target="_blank"><img alt='Click that ’hood' class='logo' src='public/images/logo.png'></a>      
     
     </header>
     
@@ -147,6 +145,7 @@
       </div>    
 
       <div id='cover'>
+      	<div id='mobilelogo'>You Don't Know Africa</div>
         <div id='loading'>
           <div>
             Loading…
@@ -167,7 +166,7 @@
                 <button onclick='startGame(false)' class='smaller'>Start a difficult game (<span class='hard-mode-count'></span> 
                 countries<span class='neighborhoods-removed-disclaimer'>*</span>)</button>
                 <span class='neighborhoods-removed-disclaimer'>
-                  <br><sup>*</sup>We’ll only skip those countries that are too small to <span class='click-verb'></span>
+                  <br><sup>*</sup>We’ll only skip those countries that are too small to <span class='click-verb'></span><br>(Nothing personal, <span class='small-neighborhood-example'></span>)
                 </span>
               </span>
             </p>
@@ -205,11 +204,11 @@
             <p>
               <button onclick='reloadPage()'>Play again</button>
             </p>
-            <p>
-              <a id='share-via-facebook' class='button smaller'>Share on Facebook</a>
-              <a id='share-via-whatsapp' class='button smaller'>Share via Whatsapp</a>
-              <a id='share-via-twitter' class='button smaller'>Share on Twitter</a>
-            </p>
+            <ul class="sharebuttons">
+              <li><a id='share-via-whatsapp' class='button smaller'>Share result via Whatsapp</a></li>
+              <li><a id='share-via-facebook' class='button smaller'>Share result on Facebook</a></li>
+              <li><a id='share-via-twitter' class='button smaller'>Share result on Twitter</a></li>
+            </ul>
             <p>
 	            <a id='share-via-email' class='button smaller'>Share via Email</a>
 	            <span class="save-to-homescreen">Save the game to your homescreen and try again later</span>
@@ -233,11 +232,11 @@
               <button onclick='reloadPage()'>Play again</button>
             </p>
             
-            <p>
-              <a id='share-via-facebook' class='button smaller'>Share on Facebook</a>
-              <a id='share-via-whatsapp' class='button smaller'>Share via Whatsapp</a>
-              <a id='share-via-twitter' class='button smaller'>Share on Twitter</a>
-            </p>
+            <ul class="sharebuttons">
+              <li><a id='share-via-whatsapp' class='button smaller'>Share result via Whatsapp</a></li>
+              <li><a id='share-via-facebook' class='button smaller'>Share result on Facebook</a></li>
+              <li><a id='share-via-twitter' class='button smaller'>Share result on Twitter</a></li>
+            </ul>
             <p>
 	            <a id='share-via-email' class='button smaller'>Share via Email</a>
 	            <span class="save-to-homescreen">Save the game to your homescreen and try again later</span>
@@ -281,15 +280,15 @@
 
   <footer>
     <span class='author'>
-        Brought to you by <a href="http://www.davidbauer.ch" target="_blank">David Bauer</a> (<a href="http://www.twitter.com/davidbauer">@davidbauer</a>).
+        Brought to you by <a href="https://www.davidbauer.ch" target="_blank">David Bauer</a> (<a href="https://www.twitter.com/davidbauer">@davidbauer</a>).
     </span>
-    Code:
+    Code adapted from:
     <a target='_blank' 
-        href='http://www.codeforamerica.org'>Code for America</a> (<a target='_blank' 
+        href='https://www.codeforamerica.org'>Code for America</a> (<a target='_blank' 
         href='https://github.com/codeforamerica/click_that_hood'>Source code</a>).
     <span class='data'>    
       <span class='data-source'>
-        Data from <a href="http://geocommons.com/" target='_blank'>Geocommons</a>.
+        Country borders from <a href="https://geocommons.com/" target='_blank'>Geocommons</a>.
       </span>
     </span>
     
