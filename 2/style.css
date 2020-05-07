@@ -1,0 +1,296 @@
+@font-face {
+  font-family: 'Homestead';
+  font-display: auto;
+  src: url('../public/fonts/Homestead-Regular.ttf');
+}
+html {
+  height: 100%;
+    font-family: 'Homestead', Arial, Helvetica, sans-serif;
+    color: white;
+	text-shadow: 0 0 2px black,
+               0 0 5px black;
+}
+
+body {
+  background: #415353;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  overflow-x: hidden;
+  min-height: 100%;
+}
+
+#wrapper {
+	width: 90%;
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#logo {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: .9;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 0;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-rendering: optimizeLegibility;
+}
+
+
+#logo .season {
+	color: #f89f34;
+	font-style: italic;
+	margin-left: -7px;
+}
+
+
+#countryguess input[type=text] {
+  width: 100%;
+  max-width: 500px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 0px;
+  font-family: 'Homestead', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+
+}
+
+#countryguess input[type=submit] {
+	display:none;
+}
+
+
+footer {
+margin-top: 20px;
+margin-bottom: 20px;
+color: #869886;
+  text-align: center;
+  width: 100%;
+}
+
+footer a {color: #869886;}
+
+footer .crosspromo, footer .crosspromo a {
+	color: e6e667;
+}
+
+.hidden {display: none;}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    
+.goodguess {
+  animation-name: flashgreen;
+  animation-duration: 2s;
+} 
+
+.badguess {
+  animation-name: flashred;
+  animation-duration: 2s;
+} 
+
+.duplicateguess {
+ animation-name: flashyellow;
+  animation-duration: 2s;	
+}
+
+.gamesuccess {
+  background: green;
+  animation-name: finalflash;
+  animation-duration: 0.5s;
+
+} 
+
+
+@keyframes flashgreen {
+  0%   {background-color: green;}
+  100% {background-color: #415353;}
+}
+
+
+@keyframes flashyellow {
+  0%   {background-color: #f89f34;}
+  100% {background-color: #415353;}
+}
+
+@keyframes flashred {
+  0%   {background-color: #f84634;}
+  100% {background-color: #415353;}
+}
+
+@keyframes finalflash {
+  0%   {background-color: #415353;}
+  50% {background-color: green;}  
+}
+
+
+.alert {color:yellow;}
+
+
+
+
+.submithint {
+	font-size:70%;
+}
+
+#feedbackhint {
+	font-size: 70%;
+	margin:150px auto 0;
+	width: 300px;
+	
+}
+
+#endmessage p {
+	font-size: 30px;
+}
+
+#missedcountries p {
+	font-size: 70%;
+	word-wrap: break-word;
+}
+
+button,
+a.button {
+  font-size: 28px;
+  font-weight: 600;
+  padding: 10px 50px;
+  margin: 0;
+  border: none;
+  border-radius: 5px;
+  background: #f89f34;
+  -webkit-transition: background 150ms;
+  -moz-transition: background 150ms;
+  transition: background 150ms;
+  color: black;
+  text-shadow: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Homestead', Arial, Helvetica, sans-serif;
+}
+button:hover,
+a.button:hover {
+  background: #fbca8e;
+}
+button:active,
+a.button:active {
+  background: #fdead2;
+}
+button.smaller,
+a.button.smaller {
+  font-weight: 400;
+  padding: 10px 20px;
+  font-size: 80%;
+}
+
+#sharing {
+	margin: 30px auto;
+}
+
+#challenge {margin-top:150px;}
+
+.sharebuttons {display: inline-block;}
+
+.sharebuttons a {
+  margin: 10 auto;
+  padding: 0;
+  max-width: 200px;
+}
+
+a.facebook {
+	background: #3B5998;
+	color: white;	
+}
+
+a.whatsapp {
+	background: #43d854;
+	color: white;	
+}
+
+a.facebook:hover {
+	background: rgba(60, 90, 153, 0.85);
+}
+
+a.twitter {
+	background: #4099FF;
+	color: white;	
+}
+
+a.twitter:hover {
+	background: rgba(63, 153, 255, 0.85);
+}
+
+a.email {
+	background: #848484;
+	color: white;	
+}
+
+a.email:hover {
+	background: #666;
+}
+
+/* tablets and larger */
+@media only screen and (min-device-width : 736px) {
+	
+	.whatsapp {
+		display: none;
+	}
+	
+	footer {margin-top: 200px;}
+		
+}
+
+
+/* mobile */
+@media only screen and (max-device-width : 768px) {
+	
+	#logo {
+		margin-top: 30px;
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+	
+	.email {display: none;}	
+	
+	button,
+	a.button {
+	font-size: 180%;
+	}
+		
+	button.smaller,
+	a.button.smaller {
+	  font-weight: 400;
+	  padding: 10px 20px;
+	  font-size: 100%;
+	  margin: 0 10px 15px 10px;
+	}
+	
+	.sharebuttons a {
+		display: block;
+		max-width: 250px;
+	}
+	
+	
+	#challenge {margin-top:100px;}
+	
+	.credit {font-size: 11px;}
+
+
+		
+}
+
+/* webapp mode */
+@media all and (display-mode: standalone) {
+  	
+}
+

@@ -1,0 +1,151 @@
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<title>You (Still) Don't Know Africa</title>
+<meta name="description" content="How many African countries can you name from memory?" />
+<meta name="author" content="David Bauer" />
+<meta name="Content-Language" content="en" />
+<meta name="keywords" content="Africa, game, You Don't Know Africa" />
+
+<!-- Facebook metadata -->
+<meta property="og:title" content="You STILL Don't Know Africa"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="http://www.youdontknowafrica.com/2"/>
+<meta property="og:image" content="https://youdontknowafrica.com/2/images/teaser-sequel.png"/>
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="fb:app_id" content="777235462302407" />
+<meta property="og:description" content="How many African countries can you name from memory? PLAY NOW."/>
+   
+<!-- Twitter metadata -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@davidbauer">
+<meta name="twitter:title" content="You STILL Don't Know Africa">
+<meta name="twitter:description" content="How many African countries can you name from memory? PLAY NOW.">
+<meta name="twitter:image" content="https://youdontknowafrica.com/2/images/teaser-sequel.png">
+
+
+<!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18717219-7', 'youdontknowafrica.com');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+<body>
+<div id="wrapper">
+
+	
+	<div id="logo">You <span class="season">still</span> Don't Know Africa</div>
+	
+	<div id="intro" class="ingame">Name 20 African countries in less than 2 minutes.</div>
+	<br/>
+	
+	<button onclick='startGame("easy")' class="pregame">Start the game</button>
+	<p>
+	<button onclick='startGame("hard")' class="pregame smaller">I know them all. Give me 10 mins</button>
+	</p>
+	
+	<button onclick='startGame("easy");gameSuccess()' class="pregame smaller testing hidden">Test: Success</button>
+	<button onclick='startGame("easy");gameFail("timeout");timeOver = true;stopTimer();' class="pregame smaller testing hidden">Test: Fail</button>
+	
+	<div id="challenge" class="pregame">
+            
+            <p>Challenge a friend</p>
+            
+            <div class="sharebuttons">
+              <a id='challenge-via-whatsapp' class='whatsapp button smaller' href="whatsapp://send?text=Can%20you%20name%2020%20African%20countries%20from%20memory%20in%20less%20than%202%20minutes%3F%20Or%20all%20countries%20in%20less%20than%2010%3F%20Check%20out%20this%20game%20I%20found%3A https%3A%2F%2Fwww.youdontknowafrica.com%2F2" target="_blank">Share via Whatsapp</a>
+              <a id='challenge-via-facebook' class='facebook button smaller' href="https://www.facebook.com/dialog/feed?app_id=777235462302407&redirect_uri=https%3A%2F%2Fwww.youdontknowafrica.com%2F2&display=page&link=https%3A%2F%2Fwww.youdontknowafrica.com%2F2&name=%5BPLAY%20NOW%5D%20You%20Don%27t%20Know%20Africa&description=Can%20you%20name%2020%20African%20countries%20from%20memory%20in%20less%20than%202%20minutes%3F%20Or%20all%20countries%20in%20less%20than%2010%3F%20Check%20out%20this%20game%20I%20found%3A&picture=https://youdontknowafrica.com/2/images/teaser-sequel.png" target="_blank">Share on Facebook</a>
+              <a id='challenge-via-twitter' class='twitter button smaller' href="https://twitter.com/intent/tweet?text=Can%20you%20name%2020%20African%20countries%20from%20memory%20in%20less%20than%202%20minutes%3F%20Or%20all%20countries%20in%20less%20than%2010%3F%20Check%20out%20this%20game%20I%20found%3A&url=https%3A%2F%2Fwww.youdontknowafrica.com%2F2&via=davidbauer" target="_blank">Share on Twitter</a>
+              <a id='challenge-via-email' class='email button smaller' href="mailto:?subject=You will like this game: You STILL Don't Know Africa&body=Can you name 20 African countries from memory in less than 2 minutes? Or all countries in less than 10? Check out this game I found: https://www.youdontknowafrica.com/2" target="_blank">Share via Email</a>
+            </div>
+     </div>
+	
+	<div class="timer ingame hidden">0:00</div>
+	
+	<form id="countryguess" class="ingame hidden">
+		<input type="text" id="userguess" autofocus autocomplete="off"><br/>
+		<input type="submit" value="Submit" class="button">
+		<div class="submithint">Hit enter when you've entered a country</div>
+	</form>
+	
+	
+	<div id="results" class="ingame hidden">
+		
+		<div id="counter">You've got <span id="correctCount">0</span>/<span id="goalCount"></span></div>
+		
+		<div id="correctcountries"></div>
+		
+		<p><button onclick='gameFail("giveup");stopTimer();' class="smaller">I give up!</button></p>		
+	</div>	
+	
+	
+	<div id="feedbackhint" class="hidden">For each country, a number of ways to write it are accepted. Think one is missing? Tell me at ydka@davidbauer.ch</div>
+	
+	<div id='endmessage' class='aftergame hidden'>
+   
+            <p>
+              Congratulations! <br/>
+              All done in <span class='timer'></span>!
+            </p>
+
+     </div>
+
+     
+     <div id="missedcountries" class="aftergamefail hidden">
+     	<p>You didn't think of </p>
+     </div>
+     
+     <div id="sharing" class="aftergame hidden">
+            <div class="sharebuttons">
+              <a id='share-via-whatsapp' class='whatsapp button smaller' target="_blank">Share result via Whatsapp</a>
+              <a id='share-via-facebook' class='facebook button smaller' target="_blank">Share result on Facebook</a>
+              <a id='share-via-twitter' class='twitter button smaller' target="_blank">Share result on Twitter</a>
+              <a id='share-via-email' class='email button smaller' target="_blank">Share via Email</a>
+            </div>
+     </div>
+     
+     
+     <div id='tryagain' class='aftergamesuccess hidden'>
+          
+			<p>
+              <button onclick='reloadPage()' class="redo-easy">Now try all</button>
+			</p>
+
+     </div>
+     
+     <div id="failed" class="aftergamefail hidden">
+     
+     	     	
+     	<p>
+          <button onclick='reloadPage()'>Try again</button>
+        </p>
+
+     </div>
+
+</div> <!-- wrapper -->
+<footer>
+	<div class="credit pregame">Made by <a href="https://www.davidbauer.ch">David Bauer</a> (<a href="https://www.twitter.com/davidbauer">@davidbauer</a>). Font from <a href="http://www.losttype.com/font/?name=homestead">Lost Type.</a></div>
+	<div class="crosspromo aftergame hidden">Check out the original <a href="https://www.youdontknowafrica.com">You Don't Know Africa</a></div>
+</footer>
+
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+
+<script>
+var myDataRef = new Firebase('https://ydka2-4b733.firebaseio.com');
+var guessesDB = new Firebase('https://ydka2-guesses.firebaseio.com');
+</script>
+
+</body>
+
+</html>

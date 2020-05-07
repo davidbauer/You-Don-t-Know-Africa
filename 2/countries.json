@@ -1,0 +1,326 @@
+[
+  {
+    "id": 1,
+    "canonical": "Algeria",
+    "accepted": ["algeria", "people's democratic republic of algeria"],
+    "guessed": false
+  },
+  {
+    "id": 2,
+    "canonical": "Angola",
+    "accepted": ["angola", "republic of angola"],
+    "guessed": false
+  },
+  {
+    "id": 3,
+    "canonical": "Benin",
+    "accepted": ["benin", "republic of benin"],
+    "guessed": false
+  },
+  {
+    "id": 4,
+    "canonical": "Botswana",
+    "accepted": ["botswana", "republic of botswana"],
+    "guessed": false
+  },
+  {
+    "id": 5,
+    "canonical": "Burkina Faso",
+    "accepted": ["burkina faso"],
+    "guessed": false
+  },
+  {
+    "id": 6,
+    "canonical": "Burundi",
+    "accepted": ["burundi", "republic of burundi"],
+    "guessed": false
+  },
+  {
+    "id": 7,
+    "canonical": "Cameroon",
+    "accepted": ["cameroon", "republic of cameroon"],
+    "guessed": false
+  },
+  {
+    "id": 8,
+    "canonical": "Cape Verde",
+    "accepted": ["cape verde", "republic of cabo verde"],
+    "guessed": false
+  },
+  {
+    "id": 9,
+    "canonical": "Central African Republic",
+    "accepted": ["central african republic"],
+    "guessed": false
+  },
+  {
+    "id": 10,
+    "canonical": "Chad",
+    "accepted": ["chad", "republic of chad"],
+    "guessed": false
+  },
+  {
+    "id": 11,
+    "canonical": "Comoros",
+    "accepted": ["comoros", "union of the comoros"],
+    "guessed": false
+  },
+  {
+    "id": 12,
+    "canonical": "Côte d'Ivoire",
+    "accepted": ["côte d'ivoire", "cote d'ivore", "cote divore", "ivory coast", "republic of côte d'ivoire"],
+    "guessed": false
+  },
+  {
+    "id": 13,
+    "canonical": "Democratic Republic of the Congo",
+    "accepted": ["democratic republic of the congo", "congo-kinshasa", "droc", "drc", "dr congo", "congo", "democratic republic congo"],
+    "guessed": false
+  },
+  {
+    "id": 14,
+    "canonical": "Djibouti",
+    "accepted": ["djibouti", "republic of djibouti"],
+    "guessed": false
+  },
+  {
+    "id": 15,
+    "canonical": "Egypt",
+    "accepted": ["egypt", "arab republic of egypt"],
+    "guessed": false
+  },
+  {
+    "id": 16,
+    "canonical": "Equatorial Guinea",
+    "accepted": ["equatorial guinea", "republic of equatorial guinea"],
+    "guessed": false
+  },
+  {
+    "id": 17,
+    "canonical": "Eritrea",
+    "accepted": ["eritrea", "state of eritrea"],
+    "guessed": false
+  },
+  {
+    "id": 18,
+    "canonical": "Eswatini",
+    "accepted": ["eswatini", "swaziland", "kingdom of eswatini"],
+    "guessed": false
+  },
+  {
+    "id": 19,
+    "canonical": "Ethiopia",
+    "accepted": ["ethiopia", "federal democratic republic of ethiopia"],
+    "guessed": false
+  },
+  {
+    "id": 20,
+    "canonical": "Gabon",
+    "accepted": ["gabon", "gabonese republic"],
+    "guessed": false
+  },
+  {
+    "id": 21,
+    "canonical": "Ghana",
+    "accepted": ["ghana", "republic of ghana"],
+    "guessed": false
+  },
+  {
+    "id": 22,
+    "canonical": "Guinea-Bissau",
+    "accepted": ["guinea-bissau", "guinea bissau", "republic of guinea-bissau"],
+    "guessed": false
+  },
+  {
+    "id": 23,
+    "canonical": "Guinea",
+    "accepted": ["guinea", "republic of guinea"],
+    "guessed": false
+  },
+  {
+    "id": 24,
+    "canonical": "Kenya",
+    "accepted": ["kenya", "republic of kenya"],
+    "guessed": false
+  },
+  {
+    "id": 25,
+    "canonical": "Lesotho",
+    "accepted": ["lesotho", "kingdom of lesotho"],
+    "guessed": false
+  },
+  {
+    "id": 26,
+    "canonical": "Liberia",
+    "accepted": ["liberia", "republic of liberia"],
+    "guessed": false
+  },
+  {
+    "id": 27,
+    "canonical": "Libya",
+    "accepted": ["libya", "state of libya"],
+    "guessed": false
+  },
+  {
+    "id": 28,
+    "canonical": "Madagascar",
+    "accepted": ["madagascar", "republic of madagascar"],
+    "guessed": false
+  },
+  {
+    "id": 29,
+    "canonical": "Malawi",
+    "accepted": ["malawi", "republic of malawi"],
+    "guessed": false
+  },
+  {
+    "id": 30,
+    "canonical": "Mali",
+    "accepted": ["mali", "republic of mali"],
+    "guessed": false
+  },
+  {
+    "id": 31,
+    "canonical": "Mauritania",
+    "accepted": ["mauritania", "islamic republic of mauritania"],
+    "guessed": false
+  },
+  {
+    "id": 32,
+    "canonical": "Mauritius",
+    "accepted": ["mauritius", "republic of mauritius"],
+    "guessed": false
+  },
+  {
+    "id": 33,
+    "canonical": "Morocco",
+    "accepted": ["morocco", "kingdom of morocco"],
+    "guessed": false
+  },
+  {
+    "id": 34,
+    "canonical": "Mozambique",
+    "accepted": ["mozambique", "republic of mozambique"],
+    "guessed": false
+  },
+  {
+    "id": 35,
+    "canonical": "Namibia",
+    "accepted": ["namibia", "republic of namibia"],
+    "guessed": false
+  },
+  {
+    "id": 36,
+    "canonical": "Niger",
+    "accepted": ["niger", "republic of the niger"],
+    "guessed": false
+  },
+  {
+    "id": 37,
+    "canonical": "Nigeria",
+    "accepted": ["nigeria", "federal republic of nigeria"],
+    "guessed": false
+  },
+  {
+    "id": 38,
+    "canonical": "Republic of the Congo",
+    "accepted": ["republic of the congo", "congo-brazzaville", "congo republic", "rotc", "republic of congo"],
+    "guessed": false
+  },
+  {
+    "id": 39,
+    "canonical": "Rwanda",
+    "accepted": ["rwanda", "republic of rwanda"],
+    "guessed": false
+  },
+  {
+    "id": 40,
+    "canonical": "São Tomé and Príncipe",
+    "accepted": ["são tomé and príncipe", "sao tome and principe", "democratic republic of são tomé and príncipe"],
+    "guessed": false
+  },
+  {
+    "id": 41,
+    "canonical": "Senegal",
+    "accepted": ["senegal", "republic of senegal"],
+    "guessed": false
+  },
+  {
+    "id": 42,
+    "canonical": "Seychelles",
+    "accepted": ["seychelles", "republic of seychelles"],
+    "guessed": false
+  },
+  {
+    "id": 43,
+    "canonical": "Sierra Leone",
+    "accepted": ["sierra leone", "republic of sierra leone"],
+    "guessed": false
+  },
+  {
+    "id": 44,
+    "canonical": "Somalia",
+    "accepted": ["somalia", "federal republic of somalia"],
+    "guessed": false
+  },
+  {
+    "id": 45,
+    "canonical": "South Africa",
+    "accepted": ["south africa", "rsa", "republic of south africa"],
+    "guessed": false
+  },
+  {
+    "id": 46,
+    "canonical": "South Sudan",
+    "accepted": ["south sudan", "republic of south sudan"],
+    "guessed": false
+  },
+  {
+    "id": 47,
+    "canonical": "Sudan",
+    "accepted": ["sudan", "republic of sudan"],
+    "guessed": false
+  },
+  {
+    "id": 48,
+    "canonical": "Tanzania",
+    "accepted": ["tanzania", "united republic of tanzania"],
+    "guessed": false
+  },
+  {
+    "id": 49,
+    "canonical": "The Gambia",
+    "accepted": ["the gambia", "gambia", "republic of the gambia"],
+    "guessed": false
+  },
+  {
+    "id": 50,
+    "canonical": "Togo",
+    "accepted": ["togo", "togolese republic"],
+    "guessed": false
+  },
+  {
+    "id": 51,
+    "canonical": "Tunisia",
+    "accepted": ["tunisia", "tunisian republic"],
+    "guessed": false
+  },
+  {
+    "id": 52,
+    "canonical": "Uganda",
+    "accepted": ["uganda", "republic of uganda"],
+    "guessed": false
+  },
+  {
+    "id": 53,
+    "canonical": "Zambia",
+    "accepted": ["zambia", "republic of zambia"],
+    "guessed": false
+  },
+  {
+    "id": 54,
+    "canonical": "Zimbabwe",
+    "accepted": ["zimbabwe", "republic of zimbabwe"],
+    "guessed": false
+  }
+]
