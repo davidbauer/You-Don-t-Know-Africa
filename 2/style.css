@@ -199,6 +199,8 @@ a.button.smaller {
 
 #challenge {margin-top:150px;}
 
+#producthunt {margin-top:100px;}
+
 .sharebuttons {display: inline-block;}
 
 .sharebuttons a {
@@ -238,6 +240,26 @@ a.email {
 a.email:hover {
 	background: #666;
 }
+
+/* easteregg */
+
+.easteregg {
+  top: -20%;
+  position: absolute;
+}
+
+
+.easteregg-active {
+ animation: falldown 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes falldown {
+  100% { top: 120%; }
+} 
+
+
+
 
 /* tablets and larger */
 @media only screen and (min-device-width : 736px) {
@@ -280,8 +302,9 @@ a.email:hover {
 		max-width: 250px;
 	}
 	
+	#producthunt {margin-top: 40px;}
 	
-	#challenge {margin-top:100px;}
+	#challenge {margin-top:30px;} /* 100px after producthunt ends */
 	
 	.credit {font-size: 11px;}
 

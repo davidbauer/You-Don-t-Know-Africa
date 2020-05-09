@@ -1,19 +1,12 @@
-
-/*TODOS
-
-- add link to ydka1
-
-nice to have
-- congo hint?
-- time's up in endmessage when reason = timeup
-
-*/
-
-
 var countrylist;
 
 var goalCount = 20;
 var correctCount = 0;
+
+var knowAfrica = false;
+var gameDifficulty;
+
+var numberOfPlays;
 
 var missedcountries = [];
 var guessedcountries = [];
@@ -26,18 +19,14 @@ var timerIntervalId;
 var finalTime = null;
 var timerStopped = false;
 var timerAlert = false;
+
 var feedbackHint = false;
-
-var knowAfrica = false;
-
-var gameDifficulty;
 
 var shareUrl = "https://www.youdontknowafrica.com/2";
 var FACEBOOK_APP_ID = '777235462302407';
 var FB_PICTURE = 'https://youdontknowafrica.com/2/images/teaser-sequel.png';
 
-var numberOfPlays;
-var existingGuesses;
+
 
 $(function() {
 
@@ -52,11 +41,14 @@ $(function() {
 		e.preventDefault(); // Stop the form from sending and reloading the page
 
 		var guess = document.getElementById('userguess').value;
+		guess = guess.trim(); // don't be fussy about spaces
 				
 		validateCountry(guess)		
 	});
 });
 
+
+//******* setting up functions ********************
 
 //activate testing mode
 function startTesting() {
@@ -73,15 +65,12 @@ function loadCountries() {
 	
 }
 
-
 // get current plays number from firebase
 function retrieveData() { 
 	myDataRef.on("value", function(snapshot) {
 	  
 	  data = snapshot.val();
 	  numberOfPlays = data['plays'];
-/* 	  existingGuesses = data['guesses']; */
-	  console.log("plays: " + numberOfPlays);
 
 	}, function (errorObject) {
 	  console.log("The read failed: " + errorObject.code);
@@ -127,6 +116,8 @@ function startGame(difficulty) {
 	
 }
 
+//******* user input functions ********************
+
 // check if user input is correct
 
 function validateCountry(guess) {
@@ -134,6 +125,13 @@ function validateCountry(guess) {
 	countryobj = countrylist.find(obj => obj.accepted.includes(guess.toLowerCase()))
 		
 	if (countryobj === undefined) {
+		
+		// check if we should trigger an easteregg
+		if (guess.toLowerCase() === "nambia" || guess.toLowerCase() === "wakanda") {
+			eggtype = guess.toLowerCase();
+			launchEasteregg(eggtype);
+		}
+		
 		computerSaysNo();	
 	}
 	
@@ -180,7 +178,6 @@ function updateSuccessList(guess) {
 	guessedcountries.push(guess);
 }
 
-
 // flash background green and empty input field when guess is correct
 function celebrateGuess() {
     $("body").toggleClass("goodguess");
@@ -213,8 +210,9 @@ function computerSaysNo() {
     }, 2000);	
 }
 
-// when game ends successfully = goal count reached
+//******* game end functions ********************
 
+// when game ends successfully, i.e. goal count reached
 function gameSuccess() {
 
 	// stop timer
@@ -255,6 +253,7 @@ function gameSuccess() {
 
 }
 
+// when game fails, i.e. time runs out or user gives up
 function gameFail(reason) {
 	
 	// create endmessage
@@ -349,8 +348,10 @@ function stopTimer() {
   updateTimer();
 }
 
-// create endmessage based on difficulty and success
 
+//******* goodbye functions ********************
+
+// create endmessage based on difficulty and success
 function endMessage() {
 
 	if (knowAfrica === true) {
@@ -507,6 +508,9 @@ function failElements() {
 
 function successElements() {
 	$('.aftergamesuccess').removeClass('hidden');
+	if (gameDifficulty === "hard") {
+		$('.redo-button').html("Try even faster");
+	}
 }
 
 
@@ -517,27 +521,30 @@ function reloadPage() {
 //******* save data to and retrieve data from firebase ********************
 
 function saveGuessesToDB() {
-	
-	//guessedcountriesobj = countrylist.filter(obj => obj.guessed === true);
-	
-	/*
-for (i = 0; i < guessedcountriesobj.length;i++) {
-		guessedcountries.push(guessedcountriesobj[i]["canonical"]);
-	}
-	
-*/
-	
 	 guessesDB.push(allguesses);
-
 }
 
 function logPlays() {
- 	console.log(numberOfPlays);
- 	console.log(numberOfPlays > 1);
  	if (numberOfPlays > 1) { // this prevents updating the database if numberOfPlays isn't loaded correctly
  		myDataRef.set({plays: numberOfPlays+1});
  	}
 }
+
+//******* eastereggs because everything is more fun with them ********************
+
+function launchEasteregg(eggtype) {
+		
+	$('.easteregg').append('<img src="images/easter-' + eggtype + '.png">');
+	$('.easteregg').addClass('easteregg-active');
+			
+	setTimeout(function(){ 
+		$('.easteregg').removeClass('easteregg-active');
+		$('.easteregg').html(""); 
+	}, 2000);
+
+	
+}
+
 
 
 // it's the end of the code as we know it

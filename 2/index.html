@@ -5,7 +5,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
-<title>You (Still) Don't Know Africa</title>
+<title>You Still Don't Know Africa</title>
 <meta name="description" content="How many African countries can you name from memory?" />
 <meta name="author" content="David Bauer" />
 <meta name="Content-Language" content="en" />
@@ -45,6 +45,7 @@
 <body>
 <div id="wrapper">
 
+	<div class="easteregg"></div>
 	
 	<div id="logo">You <span class="season">still</span> Don't Know Africa</div>
 	
@@ -58,6 +59,8 @@
 	
 	<button onclick='startGame("easy");gameSuccess()' class="pregame smaller testing hidden">Test: Success</button>
 	<button onclick='startGame("easy");gameFail("timeout");timeOver = true;stopTimer();' class="pregame smaller testing hidden">Test: Fail</button>
+	
+	<!-- <div class="producthunt pregame"><a href="https://www.producthunt.com/posts/you-still-don-t-know-africa?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-you-still-don-t-know-africa" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=198841&theme=light" alt="You Still Don't Know Africa - How many African countries can you name from memory? | Product Hunt Embed" style="width: 250px; height: 40px;" width="250px" height="40px" /></a></div> -->
 	
 	<div id="challenge" class="pregame">
             
@@ -119,7 +122,7 @@
      <div id='tryagain' class='aftergamesuccess hidden'>
           
 			<p>
-              <button onclick='reloadPage()' class="redo-easy">Now try all</button>
+              <button onclick='reloadPage()' class="redo-button">Now try all</button>
 			</p>
 
      </div>
