@@ -44,7 +44,7 @@
   {
     "id": 8,
     "canonical": "Cape Verde",
-    "accepted": ["cape verde", "republic of cabo verde"],
+    "accepted": ["cape verde", "republic of cabo verde", "cabo verde"],
     "guessed": false
   },
   {
@@ -68,13 +68,13 @@
   {
     "id": 12,
     "canonical": "Côte d'Ivoire",
-    "accepted": ["côte d'ivoire", "cote d'ivore", "cote divore", "ivory coast", "republic of côte d'ivoire"],
+    "accepted": ["côte d'ivoire", "cote d'ivoire", "cote divoire", "ivory coast", "republic of côte d'ivoire"],
     "guessed": false
   },
   {
     "id": 13,
     "canonical": "Democratic Republic of the Congo",
-    "accepted": ["democratic republic of the congo", "congo-kinshasa", "droc", "drc", "dr congo", "congo", "democratic republic congo"],
+    "accepted": ["democratic republic of the congo", "congo-kinshasa", "droc", "drc", "dr congo", "congo", "democratic republic congo", "the democratic republic of congo"],
     "guessed": false
   },
   {
@@ -224,7 +224,7 @@
   {
     "id": 38,
     "canonical": "Republic of the Congo",
-    "accepted": ["republic of the congo", "congo-brazzaville", "congo republic", "rotc", "republic of congo"],
+    "accepted": ["republic of the congo", "congo-brazzaville", "congo republic", "rotc", "republic of congo", "the republic of congo"],
     "guessed": false
   },
   {
@@ -236,7 +236,7 @@
   {
     "id": 40,
     "canonical": "São Tomé and Príncipe",
-    "accepted": ["são tomé and príncipe", "sao tome and principe", "democratic republic of são tomé and príncipe"],
+    "accepted": ["são tomé and príncipe", "sao tome and principe", "saint thomas and prince", "saint thomas & prince", "democratic republic of são tomé and príncipe"],
     "guessed": false
   },
   {
