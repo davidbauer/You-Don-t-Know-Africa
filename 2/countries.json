@@ -50,7 +50,7 @@
   {
     "id": 9,
     "canonical": "Central African Republic",
-    "accepted": ["central african republic"],
+    "accepted": ["central african republic", "car"],
     "guessed": false
   },
   {
@@ -248,7 +248,7 @@
   {
     "id": 42,
     "canonical": "Seychelles",
-    "accepted": ["seychelles", "republic of seychelles"],
+    "accepted": ["seychelles", "republic of seychelles", "la repiblik sesel"],
     "guessed": false
   },
   {
