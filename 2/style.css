@@ -199,8 +199,6 @@ a.button.smaller {
 
 #challenge {margin-top:150px;}
 
-#producthunt {margin-top:100px;}
-
 .sharebuttons {display: inline-block;}
 
 .sharebuttons a {
@@ -302,9 +300,7 @@ a.email:hover {
 		max-width: 250px;
 	}
 	
-	#producthunt {margin-top: 40px;}
-	
-	#challenge {margin-top:30px;} /* 100px after producthunt ends */
+	#challenge {margin-top:100px;}
 	
 	.credit {font-size: 11px;}
 
