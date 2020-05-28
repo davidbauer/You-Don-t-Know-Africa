@@ -154,6 +154,7 @@ function validateCountry(guess) {
 			updateSuccessList(countryobj.canonical);
 			
 			if (correctCount === goalCount) {
+				allguesses.push(guess);
 				gameSuccess()
 			}					
 		}
