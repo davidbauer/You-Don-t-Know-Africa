@@ -7,7 +7,8 @@
          "people's democratic republic of algeria"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇩🇿"
    },
    {
       "id":2,
@@ -17,7 +18,8 @@
          "republic of angola"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇦🇴"
    },
    {
       "id":3,
@@ -27,7 +29,8 @@
          "republic of benin"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇧🇯"
    },
    {
       "id":4,
@@ -37,7 +40,8 @@
          "republic of botswana"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇧🇼"
    },
    {
       "id":5,
@@ -46,7 +50,8 @@
          "burkina faso"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇧🇫"
    },
    {
       "id":6,
@@ -56,7 +61,8 @@
          "republic of burundi"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇧🇮"
    },
    {
       "id":7,
@@ -66,7 +72,8 @@
          "republic of cameroon"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇨🇲"
    },
    {
       "id":8,
@@ -77,7 +84,8 @@
          "cabo verde"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇨🇻"
    },
    {
       "id":9,
@@ -87,7 +95,8 @@
          "car"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇨🇫"
    },
    {
       "id":10,
@@ -97,7 +106,8 @@
          "republic of chad"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇹🇩"
    },
    {
       "id":11,
@@ -107,7 +117,8 @@
          "union of the comoros"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇰🇲"
    },
    {
       "id":12,
@@ -120,7 +131,8 @@
          "republic of côte d'ivoire"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇨🇮"
    },
    {
       "id":13,
@@ -136,7 +148,8 @@
          "the democratic republic of congo"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇨🇩"
    },
    {
       "id":14,
@@ -146,7 +159,8 @@
          "republic of djibouti"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇩🇯"
    },
    {
       "id":15,
@@ -156,7 +170,8 @@
          "arab republic of egypt"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇪🇬"
    },
    {
       "id":16,
@@ -166,7 +181,8 @@
          "republic of equatorial guinea"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇬🇶"
    },
    {
       "id":17,
@@ -176,7 +192,8 @@
          "state of eritrea"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇪🇷"
    },
    {
       "id":18,
@@ -187,7 +204,8 @@
          "kingdom of eswatini"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇸🇿"
    },
    {
       "id":19,
@@ -197,7 +215,8 @@
          "federal democratic republic of ethiopia"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇪🇹"
    },
    {
       "id":20,
@@ -207,7 +226,8 @@
          "gabonese republic"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇬🇦"
    },
    {
       "id":21,
@@ -217,7 +237,8 @@
          "republic of ghana"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇬🇭"
    },
    {
       "id":22,
@@ -228,7 +249,8 @@
          "republic of guinea-bissau"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇬🇼"
    },
    {
       "id":23,
@@ -238,7 +260,8 @@
          "republic of guinea"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇬🇳"
    },
    {
       "id":24,
@@ -248,7 +271,8 @@
          "republic of kenya"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇰🇪"
    },
    {
       "id":25,
@@ -258,7 +282,8 @@
          "kingdom of lesotho"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇱🇸"
    },
    {
       "id":26,
@@ -268,7 +293,8 @@
          "republic of liberia"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇱🇷"
    },
    {
       "id":27,
@@ -278,7 +304,8 @@
          "state of libya"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇱🇾"
    },
    {
       "id":28,
@@ -288,7 +315,8 @@
          "republic of madagascar"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇲🇬"
    },
    {
       "id":29,
@@ -298,7 +326,8 @@
          "republic of malawi"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇲🇼"
    },
    {
       "id":30,
@@ -308,7 +337,8 @@
          "republic of mali"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇲🇱"
    },
    {
       "id":31,
@@ -318,7 +348,8 @@
          "islamic republic of mauritania"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇲🇷"
    },
    {
       "id":32,
@@ -328,7 +359,8 @@
          "republic of mauritius"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇲🇺"
    },
    {
       "id":33,
@@ -338,7 +370,8 @@
          "kingdom of morocco"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇲🇦"
    },
    {
       "id":34,
@@ -348,7 +381,8 @@
          "republic of mozambique"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇲🇿"
    },
    {
       "id":35,
@@ -358,7 +392,8 @@
          "republic of namibia"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇳🇦"
    },
    {
       "id":36,
@@ -368,7 +403,8 @@
          "republic of the niger"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇳🇪"
    },
    {
       "id":37,
@@ -378,7 +414,8 @@
          "federal republic of nigeria"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇳🇬"
    },
    {
       "id":38,
@@ -392,7 +429,8 @@
          "the republic of congo"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇨🇬"
    },
    {
       "id":39,
@@ -402,7 +440,8 @@
          "republic of rwanda"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇷🇼"
    },
    {
       "id":40,
@@ -415,7 +454,8 @@
          "democratic republic of são tomé and príncipe"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇸🇹"
    },
    {
       "id":41,
@@ -425,7 +465,8 @@
          "republic of senegal"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇸🇳"
    },
    {
       "id":42,
@@ -436,7 +477,8 @@
          "la repiblik sesel"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇸🇨"
    },
    {
       "id":43,
@@ -446,7 +488,8 @@
          "republic of sierra leone"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇸🇱"
    },
    {
       "id":44,
@@ -456,7 +499,8 @@
          "federal republic of somalia"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇸🇴"
    },
    {
       "id":45,
@@ -467,7 +511,8 @@
          "republic of south africa"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇿🇦"
    },
    {
       "id":46,
@@ -477,7 +522,8 @@
          "republic of south sudan"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇸🇸"
    },
    {
       "id":47,
@@ -487,7 +533,8 @@
          "republic of sudan"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇸🇩"
    },
    {
       "id":48,
@@ -497,7 +544,8 @@
          "united republic of tanzania"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇹🇿"
    },
    {
       "id":49,
@@ -508,7 +556,8 @@
          "republic of the gambia"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇬🇲"
    },
    {
       "id":50,
@@ -518,7 +567,8 @@
          "togolese republic"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇹🇬"
    },
    {
       "id":51,
@@ -528,7 +578,8 @@
          "tunisian republic"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇹🇳"
    },
    {
       "id":52,
@@ -538,7 +589,8 @@
          "republic of uganda"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇺🇬"
    },
    {
       "id":53,
@@ -548,7 +600,8 @@
          "republic of zambia"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇿🇲"
    },
    {
       "id":54,
@@ -558,6 +611,7 @@
          "republic of zimbabwe"
       ],
       "guessed":false,
-      "count":0
+      "count":0,
+      "flag":"🇿🇼"
    }
 ]
