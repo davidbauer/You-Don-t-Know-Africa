@@ -4,7 +4,7 @@
       "canonical":"Algerien",
       "accepted":[
          "algerien",
-         "Demokratische Volksrepublik Algerien"
+         "demokratische volksrepublik algerien"
       ],
       "guessed":false,
       "count":0,
@@ -199,6 +199,8 @@
       "canonical":"Swasiland",
       "accepted":[
          "swasiland",
+	 "eswatini",
+	 "königreich eswatini", 
          "königreich swasiland"
       ],
       "guessed":false,
@@ -266,7 +268,7 @@
       "canonical":"Kenia",
       "accepted":[
          "kenia",
-         "republik kenya"
+         "republik kenia"
       ],
       "guessed":false,
       "count":0,
@@ -418,7 +420,6 @@
       "id":38,
       "canonical":"Republik Kongo",
       "accepted":[
-         "republik kongo",
          "kongo-brazzaville",
          "kongo republik",
          "republik kongo"
