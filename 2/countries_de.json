@@ -1,0 +1,609 @@
+[
+   {
+      "id":1,
+      "canonical":"Algerien",
+      "accepted":[
+         "algerien",
+         "demokratische volksrepublik algerien"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇩🇿"
+   },
+   {
+      "id":2,
+      "canonical":"Angola",
+      "accepted":[
+         "angola",
+         "republik angola"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇦🇴"
+   },
+   {
+      "id":3,
+      "canonical":"Benin",
+      "accepted":[
+         "benin",
+         "republik benin"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇧🇯"
+   },
+   {
+      "id":4,
+      "canonical":"Botswana",
+      "accepted":[
+         "botswana",
+         "republik botswana"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇧🇼"
+   },
+   {
+      "id":5,
+      "canonical":"Burkina Faso",
+      "accepted":[
+         "burkina faso"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇧🇫"
+   },
+   {
+      "id":6,
+      "canonical":"Burundi",
+      "accepted":[
+         "burundi",
+         "republik burundi"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇧🇮"
+   },
+   {
+      "id":7,
+      "canonical":"Kamerun",
+      "accepted":[
+         "cameroon",
+         "republik kamerun"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇨🇲"
+   },
+   {
+      "id":8,
+      "canonical":"Kap Verde",
+      "accepted":[
+         "kap verde",
+         "republik kap verde",
+         "cabo verde"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇨🇻"
+   },
+   {
+      "id":9,
+      "canonical":"Zentralafrikanische Republik",
+      "accepted":[
+         "zentralafrikanische republik",
+         "zar"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇨🇫"
+   },
+   {
+      "id":10,
+      "canonical":"Tschad",
+      "accepted":[
+         "tschad",
+         "republik tschad"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇹🇩"
+   },
+   {
+      "id":11,
+      "canonical":"Komoren",
+      "accepted":[
+         "komoren",
+         "union der komoren"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇰🇲"
+   },
+   {
+      "id":12,
+      "canonical":"Elfenbeinküste",
+      "accepted":[
+         "côte d'ivoire",
+         "cote d'ivoire",
+         "cote divoire",
+         "elfenbeinküste",
+         "republik côte d'ivoire"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇨🇮"
+   },
+   {
+      "id":13,
+      "canonical":"Demokratische Republik Kongo",
+      "accepted":[
+         "demokratische republik congo",
+         "kongo",
+         "droc",
+         "drc",
+         "dr kongo",
+         "congo"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇨🇩"
+   },
+   {
+      "id":14,
+      "canonical":"Dschibuti",
+      "accepted":[
+         "djibouti",
+         "dschibuti",
+         "republik dschibuti"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇩🇯"
+   },
+   {
+      "id":15,
+      "canonical":"Ägypten",
+      "accepted":[
+         "ägypten",
+         "arabische republik ägypten"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇪🇬"
+   },
+   {
+      "id":16,
+      "canonical":"Äquatorialguinea",
+      "accepted":[
+         "äquatorialguinea",
+         "republik äquatorialguinea"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇬🇶"
+   },
+   {
+      "id":17,
+      "canonical":"Eritrea",
+      "accepted":[
+         "eritrea",
+         "staat eritrea"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇪🇷"
+   },
+   {
+      "id":18,
+      "canonical":"Swasiland",
+      "accepted":[
+         "swasiland",
+	 "eswatini",
+	 "königreich eswatini", 
+         "königreich swasiland"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇸🇿"
+   },
+   {
+      "id":19,
+      "canonical":"Äthiopien",
+      "accepted":[
+         "äthiopien",
+         "demokratische bundesrepublik äthiopien"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇪🇹"
+   },
+   {
+      "id":20,
+      "canonical":"Gabun",
+      "accepted":[
+         "gabun",
+         "gabunische republik"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇬🇦"
+   },
+   {
+      "id":21,
+      "canonical":"Ghana",
+      "accepted":[
+         "ghana",
+         "republik ghana"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇬🇭"
+   },
+   {
+      "id":22,
+      "canonical":"Guinea-Bissau",
+      "accepted":[
+         "guinea-bissau",
+         "guinea bissau",
+         "republik guinea-bissau"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇬🇼"
+   },
+   {
+      "id":23,
+      "canonical":"Guinea",
+      "accepted":[
+         "guinea",
+         "republik guinea"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇬🇳"
+   },
+   {
+      "id":24,
+      "canonical":"Kenia",
+      "accepted":[
+         "kenia",
+         "republik kenia"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇰🇪"
+   },
+   {
+      "id":25,
+      "canonical":"Lesotho",
+      "accepted":[
+         "lesotho",
+         "königreich lesotho"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇱🇸"
+   },
+   {
+      "id":26,
+      "canonical":"Liberia",
+      "accepted":[
+         "liberia",
+         "republik liberia"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇱🇷"
+   },
+   {
+      "id":27,
+      "canonical":"Libyen",
+      "accepted":[
+         "libyen"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇱🇾"
+   },
+   {
+      "id":28,
+      "canonical":"Madagaskar",
+      "accepted":[
+         "madagaskar",
+         "republik madagascar"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇲🇬"
+   },
+   {
+      "id":29,
+      "canonical":"Malawi",
+      "accepted":[
+         "malawi",
+         "republik malawi"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇲🇼"
+   },
+   {
+      "id":30,
+      "canonical":"Mali",
+      "accepted":[
+         "mali",
+         "republik mali"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇲🇱"
+   },
+   {
+      "id":31,
+      "canonical":"Mauretanien",
+      "accepted":[
+         "mauretanien",
+         "islamische republik mauretanien"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇲🇷"
+   },
+   {
+      "id":32,
+      "canonical":"Mauritius",
+      "accepted":[
+         "mauritius",
+         "republik mauritius"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇲🇺"
+   },
+   {
+      "id":33,
+      "canonical":"Marokko",
+      "accepted":[
+         "marokko",
+         "königreich marokko"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇲🇦"
+   },
+   {
+      "id":34,
+      "canonical":"Mosambik",
+      "accepted":[
+         "mosambik",
+         "republik mosambik"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇲🇿"
+   },
+   {
+      "id":35,
+      "canonical":"Namibia",
+      "accepted":[
+         "namibia",
+         "republik namibia"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇳🇦"
+   },
+   {
+      "id":36,
+      "canonical":"Niger",
+      "accepted":[
+         "niger",
+         "republik niger"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇳🇪"
+   },
+   {
+      "id":37,
+      "canonical":"Nigeria",
+      "accepted":[
+         "nigeria",
+         "bundesrepublik nigeria"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇳🇬"
+   },
+   {
+      "id":38,
+      "canonical":"Republik Kongo",
+      "accepted":[
+         "kongo-brazzaville",
+         "kongo republik",
+         "republik kongo"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇨🇬"
+   },
+   {
+      "id":39,
+      "canonical":"Ruanda",
+      "accepted":[
+         "ruanda",
+         "republik ruanda"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇷🇼"
+   },
+   {
+      "id":40,
+      "canonical":"São Tomé und Príncipe",
+      "accepted":[
+         "são tomé und príncipe",
+         "sao tome und principe",
+         "democratische republik são tomé und príncipe"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇸🇹"
+   },
+   {
+      "id":41,
+      "canonical":"Senegal",
+      "accepted":[
+         "senegal",
+         "republik senegal"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇸🇳"
+   },
+   {
+      "id":42,
+      "canonical":"Seychellen",
+      "accepted":[
+         "seychellen",
+         "republik seychelles"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇸🇨"
+   },
+   {
+      "id":43,
+      "canonical":"Sierra Leone",
+      "accepted":[
+         "sierra leone",
+         "republik sierra leone"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇸🇱"
+   },
+   {
+      "id":44,
+      "canonical":"Somalia",
+      "accepted":[
+         "somalia",
+         "bundesrepublik somalia"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇸🇴"
+   },
+   {
+      "id":45,
+      "canonical":"Südafrika",
+      "accepted":[
+         "südafrika",
+         "rsa",
+         "republik südafrika"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇿🇦"
+   },
+   {
+      "id":46,
+      "canonical":"Südsudan",
+      "accepted":[
+         "südsudan",
+         "republik südsudan"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇸🇸"
+   },
+   {
+      "id":47,
+      "canonical":"Sudan",
+      "accepted":[
+         "sudan",
+         "republik sudan"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇸🇩"
+   },
+   {
+      "id":48,
+      "canonical":"Tansania",
+      "accepted":[
+         "tansania",
+         "vereinigte republik tansania"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇹🇿"
+   },
+   {
+      "id":49,
+      "canonical":"Gambia",
+      "accepted":[
+         "gambia",
+         "republik gambia"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇬🇲"
+   },
+   {
+      "id":50,
+      "canonical":"Togo",
+      "accepted":[
+         "togo",
+         "republik togo"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇹🇬"
+   },
+   {
+      "id":51,
+      "canonical":"Tunesien",
+      "accepted":[
+         "tunesien",
+         "tunesische republik"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇹🇳"
+   },
+   {
+      "id":52,
+      "canonical":"Uganda",
+      "accepted":[
+         "uganda",
+         "republik uganda"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇺🇬"
+   },
+   {
+      "id":53,
+      "canonical":"Sambia",
+      "accepted":[
+         "sambia",
+         "republik sambia"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇿🇲"
+   },
+   {
+      "id":54,
+      "canonical":"Simbabwe",
+      "accepted":[
+         "simbabwe",
+         "republik simbabwe"
+      ],
+      "guessed":false,
+      "count":0,
+      "flag":"🇿🇼"
+   }
+]
