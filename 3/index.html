@@ -1,0 +1,128 @@
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<title>You Don't Know African Flags</title>
+<meta name="description" content="Can't be that hard, can it? 😬" />
+<meta name="author" content="David Bauer" />
+<meta name="Content-Language" content="en" />
+<meta name="keywords" content="Africa, game, flags, You Don't Know Africa" />
+
+<!-- Facebook metadata -->
+<meta property="og:title" content="You Don't Know African Flags"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="http://www.youdontknowafrica.com/3"/>
+<meta property="og:image" content="https://youdontknowafrica.com/3/images/teaser-flags.png"/>
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="fb:app_id" content="777235462302407" />
+<meta property="og:description" content="Can't be that hard, can it? 😬"/>
+   
+<!-- Twitter metadata -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@davidbauer">
+<meta name="twitter:title" content="You Don't Know African Flags">
+<meta name="twitter:description" content="Can't be that hard, can it? 😬">
+<meta name="twitter:image" content="https://youdontknowafrica.com/3/images/teaser-flags.png">
+
+<! Plausible Analytics -->
+
+<script defer data-domain="youdontknowafrica.com" src="https://plausible.io/js/plausible.js"></script>
+
+
+</head>
+<body class="cover">
+<div id="wrapper">
+	
+	<div class="easteregg"></div>
+	
+	<div id="logo">You Don't Know<br>African<span class="season"> flags</span></div>
+	
+	<div id="intro" class="ingame">Identify 20 African country flags, as fast as you can</div>
+	<br/>
+	
+	<button onclick='startGame("easy")' class="pregame">Start the game</button>
+	<p>
+	<button onclick='startGame("hard")' class="pregame medium">I can do all 54!</button>
+	</p>
+	
+	<button onclick='startGame("easy");gameSuccess()' class="pregame smaller testing hidden">Test: easy success</button>
+	<button onclick='startGame("hard");gameSuccess()' class="pregame smaller testing hidden">Test: hard success</button>
+	
+	
+	<div id="challenge" class="pregame">
+            
+            <p>Challenge a friend</p>
+            
+            <div class="sharebuttons">
+              <a id='challenge-via-whatsapp' class='whatsapp button smaller' href="whatsapp://send?text=Check%20out%20this%20game%20I%20found%3A https%3A%2F%2Fwww.youdontknowafrica.com%2F3" target="_blank">Share via Whatsapp</a>
+              <a id='challenge-via-facebook' class='facebook button smaller' href="https://www.facebook.com/dialog/feed?app_id=777235462302407&redirect_uri=https%3A%2F%2Fwww.youdontknowafrica.com%2F3&display=page&link=https%3A%2F%2Fwww.youdontknowafrica.com%2F3&name=%5BPLAY%20NOW%5D%20You%20Don%27t%20Know%20African%20Flags&description=How%20good%20are%20you%20with%20African%20flags%3F%20Check%20out%20this%20game%20I%20found%3A&picture=https://youdontknowafrica.com/3/images/teaser-flags.png" target="_blank">Share on Facebook</a>
+              <a id='challenge-via-twitter' class='twitter button smaller' href="https://twitter.com/intent/tweet?text=How%20good%20are%20you%20with%20African%20flags%3F%20Check%20out%20this%20game%20I%20found%3A&url=https%3A%2F%2Fwww.youdontknowafrica.com%2F3&via=davidbauer" target="_blank">Share on Twitter</a>
+              <a id='challenge-via-email' class='email button smaller' href="mailto:?subject=You will like this game: You Don't Know African Flags&body=How good are you with African flags? Check out this game I found: https://www.youdontknowafrica.com/3" target="_blank">Share via Email</a>
+            </div>
+     </div>
+	
+	<div class="scoreboard ingame hidden">
+		<p><span id="correctCount">0</span>/<span id="goalCount"></span> • <span class="timer">0:00</span> </p>
+	</div>
+	
+	<div class="flagtoguess ingame">
+		<!-- flag to guess will be inserted here -->
+		
+	</div>
+	
+	<div class="answeroptions ingame">
+		<!-- answer options will be inserted here -->
+	</div>
+	
+	
+		
+	<div id='endmessage' class='aftergame hidden'>
+   
+			<p>All done in <span class='timer'></span></p>
+            <p class="endtxt">
+              Congratulations!
+            </p>
+
+     </div>
+     
+     <div id="sharing" class="aftergame hidden">
+            <div class="sharebuttons">
+              <a id='share-via-whatsapp' class='whatsapp button smaller' target="_blank">Share result via Whatsapp</a>
+              <a id='share-via-facebook' class='facebook button smaller' target="_blank">Share result on Facebook</a>
+              <a id='share-via-twitter' class='twitter button smaller' target="_blank">Share result on Twitter</a>
+              <a id='share-via-email' class='email button smaller' target="_blank">Share via Email</a>
+            </div>
+     </div>
+     
+     
+     <div id='tryagain' class='aftergame hidden'>
+          
+			<p>
+              <button onclick='reloadPage()' class="redo-button">Now try all</button>
+			</p>
+
+     </div>
+
+</div> <!-- wrapper -->
+<footer>
+	<div class="credit pregame">Made by <a href="https://www.davidbauer.ch">David Bauer</a> (<a href="https://www.twitter.com/davidbauer">@davidbauer</a>). Font from <a href="http://www.losttype.com/font/?name=homestead">Lost Type.</a></div>
+	<div class="crosspromo aftergame hidden">Liked it? <a href="https://www.buymeacoffee.com/davidbauer">Buy me a coffee</a> and sign up for my <a href="https://www.weeklyfilet.com?ref=ydka" target="_blank">newsletter</a>.</div>
+	<div class="crosspromo ingame aftergame hidden">Check out the other games in the <a href="https://www.youdontknowafrica.com">You Don't Know Africa</a> series!</div>
+</footer>
+
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+
+
+<script>
+ var myDataRef = new Firebase('https://ydka3-3fefd-default-rtdb.firebaseio.com/');
+ var guessesDB = new Firebase('https://ydka3-guesses-f0351-default-rtdb.firebaseio.com/');
+ var gamesDB = new Firebase('https://ydka3-games-default-rtdb.firebaseio.com/');
+</script>
+
+</body>
+
+</html>

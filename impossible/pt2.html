@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<head>
+<!--
+/*
+ * Click That ’Hood
+ *
+ * Front-end (mostly) by Marcin Wichary, Code for America fellow in 2013.
+ *
+ * Note: This code is really gnarly. It’s been done under a lot of time 
+ * pressure and there’s a lot of shortcut and tech debt. It might be improved
+ * later if there’s time later.
+ *
+ * Note 2: Code made even worse by David Bauer, who is more of a journalist than a coder. ¯\_(ツ)_/¯
+ */
+-->
+
+  <title>You Don't Know Africa ULTIMATE (Part 2)</title>
+  <meta charset='utf-8'>
+
+  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+  <meta name="description" content="A geography game about Africa that will probably embarrass you. Try it and challenge your friends." />
+  <meta name="author" content="David Bauer" />
+  <meta name="Content-Language" content="en" />
+  <meta name="keywords" content="Africa, Game, Countries, You Don't Know Africa, Click that Hood" />
+  
+  <meta name="google-site-verification" content="NIQf1dkbS1GEEwBoNAr3FiSfoFRFZILdt0Ap1Hen0z4" />
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+  <link href='public/css/styles.css' rel='stylesheet' type='text/css'> 
+ 
+  <!-- Facebook metadata -->
+  <meta property="og:title" content="[PLAY NOW] You Don't Know Africa 🌍🧐"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="http://www.youdontknowafrica.com"/>
+  <meta property="og:image" content="https://youdontknowafrica.com/1/public/images/teaser.png"/>
+  <meta property="og:image:width" content="1867">
+  <meta property="og:image:height" content="935">
+  <meta property="fb:app_id" content="777235462302407" />
+  <meta property="og:description" content="Find all African countries as quick as you can. It's harder than you  think."/>
+   
+   <!-- Twitter metadata -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:creator" content="@davidbauer">
+	<meta name="twitter:title" content="You Don't Know Africa [PLAY NOW]">
+	<meta name="twitter:description" content="Find all African countries as quick as you can. It's harder than you might think.">
+	<meta name="twitter:image" content="https://youdontknowafrica.com/1/public/images/teaser.png">
+    
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="public/images/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="public/images/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="public/images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="public/images/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="public/images/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="public/images/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="public/images/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="public/images/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="public/images/favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="public/images/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="public/images/favicons/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="public/images/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="public/images/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="public/images/favicons/manifest.json">
+	<link rel="mask-icon" href="public/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	
+	    
+    
+    <!-- Plausible Analytics -->     
+<!--     <script defer data-domain="youdontknowafrica.com" src="https://plausible.io/js/plausible.js"></script> -->
+
+
+</head>
+
+<body>
+
+  <div class='canvas'>
+    
+    <div id='map'>
+
+      <div id='svg-container'></div>    
+      <div id='neighborhood-hover'>
+        <span></span>
+      </div>    
+
+      <div id='cover'>
+        <div id='loading'>
+          <div>
+            Loading…
+          </div>
+        </div>
+        <div id='intro'>
+          <div>
+	        <p>Welcome to part two of You Don't Know Africa Ultimate: Find all African countries on the map, as quickly as possible. A little catch: No names, just flags.</p>
+            <p>
+              <button onclick='startGame(true)'>Start part two</button> <!-- change to (false) for hard mode -->
+            </p>
+			
+          </div>
+			
+        </div>
+
+		<div id='congrats-easy'> <!-- for TESTING only -->
+          <div>
+            <h1>
+              Congratulations! 
+            </h1>
+            <p>
+              You correctly identified
+              <br>
+              <span class='easy-mode-count'></span> 
+              countries
+              <br>in <span class='time'></span>!
+            </p>
+            <p>
+              <button onclick='reloadPage()'>Play again</button>
+            </p>
+            
+            <p>
+              <a class="button smaller" href="https://www.youdontknowafrica.com/">Try the sequels</a>
+            </p>
+            
+            <ul class="sharebuttons">
+              <li><a id='share-via-whatsapp' class='button smaller'>Share result via Whatsapp</a></li>
+              <li><a id='share-via-facebook' class='button smaller'>Share result on Facebook</a></li>
+              <li><a id='share-via-twitter' class='button smaller'>Share result on Twitter</a></li>
+            </ul>
+            <p>
+	            <a id='share-via-email' class='button smaller'>Share via Email</a>
+            </p>
+            
+            <div class="crosspromo aftergame hidden">Liked it? <a href="https://www.buymeacoffee.com/davidbauer">Buy me a coffee</a> and sign up for my <a href="https://www.weeklyfilet.com?ref=ydka" target="_blank">newsletter</a>. Check out the other games in the <a href="https://www.youdontknowafrica.com">You Don't Know Africa</a> series!</div>
+
+          </div>
+        </div>
+
+
+
+        <div id='congrats-hard'>
+          <div>
+            <h1>
+              Congratulations! 
+            </h1>
+            <p>
+              You correctly identified 
+              <br>
+              all countries
+              <br>in <span class='time'></span>!
+            </p>
+            <p>
+              <button onclick='reloadPage()'>Play again</button>
+            </p>
+            
+            <ul class="sharebuttons">
+              <li><a id='share-via-whatsapp' class='button smaller'>Share result via Whatsapp</a></li>
+              <li><a id='share-via-facebook' class='button smaller'>Share result on Facebook</a></li>
+              <li><a id='share-via-twitter' class='button smaller'>Share result on Twitter</a></li>
+            </ul>
+            <p>
+	            <a id='share-via-email' class='button smaller'>Share via Email</a>
+            </p>
+            
+            
+            <div class="crosspromo aftergame hidden">Liked it? <a href="https://www.buymeacoffee.com/davidbauer">Buy me a coffee</a> and sign up for my <a href="https://www.weeklyfilet.com?ref=ydka" target="_blank">newsletter</a>. Check out the other games in the <a href="https://www.youdontknowafrica.com">You Don't Know Africa</a> series!</div>
+            
+
+          </div>
+        </div>
+      </div>
+
+      <div id='neighborhood-guess-wrapper'>
+        <div id='neighborhood-guess'>
+          <span class='click-verb capitalize'></span>
+          <span class='name'></span>
+        </div>    
+      </div>
+
+      <div id='count-time-wrapper-wrapper'>
+        <div id='count-time-wrapper'>
+          <div id='count-time'>
+            <span id='count'></span>
+            <span class='time'></span>
+          </div>    
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <span class='author'>
+        Brought to you by <a href="https://www.davidbauer.ch" target="_blank">David Bauer</a> (<a href="https://www.twitter.com/davidbauer">@davidbauer</a>).
+    </span>
+    Code adapted from:
+    <a target='_blank' 
+        href='https://github.com/codeforamerica/click_that_hood'>Code for America</a>.
+    <span class='data'>    
+      <span class='data-source'>
+        Country borders from <a href="https://geocommons.com/" target='_blank'>Geocommons</a>.
+      </span>
+    </span>
+    
+  </footer> 
+  
+   <script src='public/js/d3.v3.min.js'></script>
+  <script src='public/js/queue.v1.min.js'></script>
+  <script src='public/js/topojson.v0.min.js'></script>
+   
+  <script src='public/js/modernizr.js'></script>
+  <script src='public/js/scripts.js'></script>
+  <script src='public/js/data.js'></script> 
+  
+  <script>
+    main();
+  </script>
+</body>

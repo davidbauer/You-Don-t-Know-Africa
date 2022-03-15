@@ -1,5 +1,8 @@
 var countrylist;
 
+const languages = ["en", "de"];
+var lang = "en";
+
 var goalCount = 20;
 var correctCount = 0;
 
@@ -30,6 +33,9 @@ var FB_PICTURE = 'https://youdontknowafrica.com/2/images/teaser-sequel.png';
 
 $(function() {
 
+	// determine language
+	changeLanguage();
+	
 	// load country data
 	loadCountries();
 	
@@ -55,10 +61,28 @@ function startTesting() {
 	$('.testing').removeClass('hidden');
 }
 
+
+// change language from param or select
+function changeLanguage() {
+	s = window.location.search;
+	l = s.substring(6);
+	
+	if (languages.includes(l)) { // check if param from url is a supported language
+		console.log("lang: " + l);
+		lang = l;
+	}
+	
+	else {
+		console.log("Language not supported or invalid param");
+	}
+}
+
 // load and save list of countries
 function loadCountries() {
 	
-	$.getJSON("countries.json", function(json) {
+	console.log("loading countries-"+ lang + ".json");
+	
+	$.getJSON("countries-"+ lang + ".json", function(json) {
     countrylist = json;
     console.log(countrylist);
 	});
@@ -250,7 +274,9 @@ function gameSuccess() {
     updateEmailLink();
     
     // save all guesses to DB
-    saveGuessesToDB();
+    if (lang === "en") {
+    	saveGuessesToDB();
+    }
 
 }
 
@@ -292,7 +318,10 @@ function gameFail(reason) {
 
 	
 	// save all guesses to DB
-	saveGuessesToDB()
+    if (lang === "en") {
+    	saveGuessesToDB();
+    }
+
 }
 
 

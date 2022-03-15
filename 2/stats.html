@@ -1,0 +1,122 @@
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<script src="stats.js"></script>
+<title>You Still Don't Know Africa, by the numbers</title>
+<meta name="description" content="How many African countries can people name from memory? And which ones?" />
+<meta name="author" content="David Bauer" />
+<meta name="Content-Language" content="en" />
+<meta name="keywords" content="Africa, game, You Don't Know Africa" />
+
+<!-- Facebook metadata -->
+<meta property="og:title" content="You Still Don't Know Africa, by the numbers"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="http://www.youdontknowafrica.com/2/stats.html"/>
+<meta property="og:image" content="https://youdontknowafrica.com/2/images/eggteaser.png"/>
+<meta property="og:description" content="Statistics: How many African countries can people name from memory? And which ones?"/>
+   
+<!-- Twitter metadata -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@davidbauer">
+<meta name="twitter:title" content="You Still Don't Know Africa, by the numbers">
+<meta name="twitter:description" content="Statistics: How many African countries can people name from memory? And which ones?">
+<meta name="twitter:image" content="https://youdontknowafrica.com/2/images/eggteaser.png">
+
+
+
+</head>
+<body>
+<div id="wrapper">
+
+<div id="results">
+
+	<h2>You <i>still</i> don't know Africa,<br/><span class="season">by the numbers</span></h2>
+	<p>Based on <span class="attempts">21723</span> attempts so far.</p>
+	<p><span class="completed bignumber">622</span><br/>people could name all 54 countries.<br/>👏👏👏</p>
+	
+	<p><span class="successes bignumber">27%</span><br/> could name 20 countries in less than 2 minutes.<br/>😎</p>
+	
+	<p><span class="fail-bad mediumnumber">39%</span><br/> got between 11 and 19 right.</p>
+	
+	<p><span class="fail-worse mediumnumber">13%</span><br/> failed to name more than 10 countries.</p>
+	
+	<p><span class="fail-worst bignumber">7%</span>🧐<br/> thought it's a good idea to play this game, yet couldn't name more than 5 countries.</p>
+	
+	<a href="./" target="_blank"><button>Play the game</button></a>
+
+	<br><br>
+	<button onclick='revealMoreStats()' class="revealbutton smaller">Reveal more stats (that include spoilers)</button>
+
+	<div id="morestats" class="hidden">
+	<h2>Best known to least known</h2>
+	<p>Percent of attempts that included...</p>
+	<div class="countrybreakdown">
+		<table><!--- this is where the country stats are inserted -/--><tbody><tr class="pct-88"><td class="cb-c">Egypt 🇪🇬</td><td class="cb-v"><span>••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••</span> 88%</td></tr><tr class="pct-88"><td class="cb-c">South Africa 🇿🇦</td><td class="cb-v"><span>••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••</span> 88%</td></tr><tr class="pct-68"><td class="cb-c">Nigeria 🇳🇬</td><td class="cb-v"><span>••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••</span> 68%</td></tr><tr class="pct-68"><td class="cb-c">Morocco 🇲🇦</td><td class="cb-v"><span>••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••</span> 68%</td></tr><tr class="pct-65"><td class="cb-c">Congo<sup>*</sup> 🇨🇩</td><td class="cb-v"><span>•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••</span> 65%</td></tr><tr class="pct-59"><td class="cb-c">Sudan 🇸🇩</td><td class="cb-v"><span>•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••</span> 59%</td></tr><tr class="pct-58"><td class="cb-c">Niger 🇳🇪</td><td class="cb-v"><span>••••••••••••••••••••••••••••••••••••••••••••••••••••••••••</span> 58%</td></tr><tr class="pct-56"><td class="cb-c">Algeria 🇩🇿</td><td class="cb-v"><span>••••••••••••••••••••••••••••••••••••••••••••••••••••••••</span> 56%</td></tr><tr class="pct-53"><td class="cb-c">Kenya 🇰🇪</td><td class="cb-v"><span>•••••••••••••••••••••••••••••••••••••••••••••••••••••</span> 53%</td></tr><tr class="pct-52"><td class="cb-c">Ethiopia 🇪🇹</td><td class="cb-v"><span>••••••••••••••••••••••••••••••••••••••••••••••••••••</span> 52%</td></tr><tr class="pct-49"><td class="cb-c">Libya 🇱🇾</td><td class="cb-v"><span>•••••••••••••••••••••••••••••••••••••••••••••••••</span> 49%</td></tr><tr class="pct-46"><td class="cb-c">Madagascar 🇲🇬</td><td class="cb-v"><span>••••••••••••••••••••••••••••••••••••••••••••••</span> 46%</td></tr><tr class="pct-45"><td class="cb-c">Chad 🇹🇩</td><td class="cb-v"><span>•••••••••••••••••••••••••••••••••••••••••••••</span> 45%</td></tr><tr class="pct-44"><td class="cb-c">Somalia 🇸🇴</td><td class="cb-v"><span>••••••••••••••••••••••••••••••••••••••••••••</span> 44%</td></tr><tr class="pct-44"><td class="cb-c">South Sudan 🇸🇸</td><td class="cb-v"><span>••••••••••••••••••••••••••••••••••••••••••••</span> 44%</td></tr><tr class="pct-43"><td class="cb-c">Tunisia 🇹🇳</td><td class="cb-v"><span>•••••••••••••••••••••••••••••••••••••••••••</span> 43%</td></tr><tr class="pct-42"><td class="cb-c">Zimbabwe 🇿🇼</td><td class="cb-v"><span>••••••••••••••••••••••••••••••••••••••••••</span> 42%</td></tr><tr class="pct-42"><td class="cb-c">Ghana 🇬🇭</td><td class="cb-v"><span>••••••••••••••••••••••••••••••••••••••••••</span> 42%</td></tr><tr class="pct-40"><td class="cb-c">Côte d'Ivoire 🇨🇮</td><td class="cb-v"><span>••••••••••••••••••••••••••••••••••••••••</span> 40%</td></tr><tr class="pct-35"><td class="cb-c">Mali 🇲🇱</td><td class="cb-v"><span>•••••••••••••••••••••••••••••••••••</span> 35%</td></tr><tr class="pct-35"><td class="cb-c">Namibia 🇳🇦</td><td class="cb-v"><span>•••••••••••••••••••••••••••••••••••</span> 35%</td></tr><tr class="pct-33"><td class="cb-c">Tanzania 🇹🇿</td><td class="cb-v"><span>•••••••••••••••••••••••••••••••••</span> 33%</td></tr><tr class="pct-33"><td class="cb-c">Liberia 🇱🇷</td><td class="cb-v"><span>•••••••••••••••••••••••••••••••••</span> 33%</td></tr><tr class="pct-32"><td class="cb-c">Lesotho 🇱🇸</td><td class="cb-v"><span>••••••••••••••••••••••••••••••••</span> 32%</td></tr><tr class="pct-31"><td class="cb-c">Botswana 🇧🇼</td><td class="cb-v"><span>•••••••••••••••••••••••••••••••</span> 31%</td></tr><tr class="pct-31"><td class="cb-c">Rwanda 🇷🇼</td><td class="cb-v"><span>•••••••••••••••••••••••••••••••</span> 31%</td></tr><tr class="pct-30"><td class="cb-c">Uganda 🇺🇬</td><td class="cb-v"><span>••••••••••••••••••••••••••••••</span> 30%</td></tr><tr class="pct-30"><td class="cb-c">Eswatini 🇸🇿</td><td class="cb-v"><span>••••••••••••••••••••••••••••••</span> 30%</td></tr><tr class="pct-30"><td class="cb-c">Mozambique 🇲🇿</td><td class="cb-v"><span>••••••••••••••••••••••••••••••</span> 30%</td></tr><tr class="pct-30"><td class="cb-c">Angola 🇦🇴</td><td class="cb-v"><span>••••••••••••••••••••••••••••••</span> 30%</td></tr><tr class="pct-29"><td class="cb-c">Zambia 🇿🇲</td><td class="cb-v"><span>•••••••••••••••••••••••••••••</span> 29%</td></tr><tr class="pct-29"><td class="cb-c">Eritrea 🇪🇷</td><td class="cb-v"><span>•••••••••••••••••••••••••••••</span> 29%</td></tr><tr class="pct-28"><td class="cb-c">Senegal 🇸🇳</td><td class="cb-v"><span>••••••••••••••••••••••••••••</span> 28%</td></tr><tr class="pct-27"><td class="cb-c">Togo 🇹🇬</td><td class="cb-v"><span>•••••••••••••••••••••••••••</span> 27%</td></tr><tr class="pct-25"><td class="cb-c">Cameroon 🇨🇲</td><td class="cb-v"><span>•••••••••••••••••••••••••</span> 25%</td></tr><tr class="pct-24"><td class="cb-c">Djibouti 🇩🇯</td><td class="cb-v"><span>••••••••••••••••••••••••</span> 24%</td></tr><tr class="pct-23"><td class="cb-c">Central African Republic 🇨🇫</td><td class="cb-v"><span>•••••••••••••••••••••••</span> 23%</td></tr><tr class="pct-23"><td class="cb-c">The Gambia 🇬🇲</td><td class="cb-v"><span>•••••••••••••••••••••••</span> 23%</td></tr><tr class="pct-23"><td class="cb-c">Guinea 🇬🇳</td><td class="cb-v"><span>•••••••••••••••••••••••</span> 23%</td></tr><tr class="pct-22"><td class="cb-c">Benin 🇧🇯</td><td class="cb-v"><span>••••••••••••••••••••••</span> 22%</td></tr><tr class="pct-21"><td class="cb-c">Republic of the Congo<sup>*</sup> 🇨🇬</td><td class="cb-v"><span>•••••••••••••••••••••</span> 21%</td></tr><tr class="pct-20"><td class="cb-c">Mauritania 🇲🇷</td><td class="cb-v"><span>••••••••••••••••••••</span> 20%</td></tr><tr class="pct-20"><td class="cb-c">Sierra Leone 🇸🇱</td><td class="cb-v"><span>••••••••••••••••••••</span> 20%</td></tr><tr class="pct-19"><td class="cb-c">Malawi 🇲🇼</td><td class="cb-v"><span>•••••••••••••••••••</span> 19%</td></tr><tr class="pct-19"><td class="cb-c">Burkina Faso 🇧🇫</td><td class="cb-v"><span>•••••••••••••••••••</span> 19%</td></tr><tr class="pct-18"><td class="cb-c">Burundi 🇧🇮</td><td class="cb-v"><span>••••••••••••••••••</span> 18%</td></tr><tr class="pct-18"><td class="cb-c">Gabon 🇬🇦</td><td class="cb-v"><span>••••••••••••••••••</span> 18%</td></tr><tr class="pct-17"><td class="cb-c">Seychelles 🇸🇨</td><td class="cb-v"><span>•••••••••••••••••</span> 17%</td></tr><tr class="pct-16"><td class="cb-c">Mauritius 🇲🇺</td><td class="cb-v"><span>••••••••••••••••</span> 16%</td></tr><tr class="pct-14"><td class="cb-c">Cape Verde 🇨🇻</td><td class="cb-v"><span>••••••••••••••</span> 14%</td></tr><tr class="pct-14"><td class="cb-c">Equatorial Guinea 🇬🇶</td><td class="cb-v"><span>••••••••••••••</span> 14%</td></tr><tr class="pct-14"><td class="cb-c">Guinea-Bissau 🇬🇼</td><td class="cb-v"><span>••••••••••••••</span> 14%</td></tr><tr class="pct-13"><td class="cb-c">São Tomé and Príncipe 🇸🇹</td><td class="cb-v"><span>•••••••••••••</span> 13%</td></tr><tr class="pct-11"><td class="cb-c">Comoros 🇰🇲</td><td class="cb-v"><span>•••••••••••</span> 11%</td></tr></tbody></table>
+		<div class="eggstats">
+		<p><span class="nambia bignumber">397</span><br/> are (like) Trump and think Nambia exists.<br/><sup>¯\_</sup><img src="images/easter-nambia.png"><sup>_/¯</sup></p>
+		<p><span class="wakanda bignumber">135</span><br/> watched too many Marvel movies and think Wakanda is real.<br/><sup>¯\_</sup><img src="images/easter-wakanda.png"><sup>_/¯</sup></p>
+		</div>
+		
+		<div class="notafrica">
+			<h2>No, sorry, not in Africa</h2>
+			<div>
+			<ol>
+				<li>Syria</li>
+				<li>Yemen</li>
+				<li>Lebanon</li>
+				<li>Guyana</li>
+				<li>New Guinea</li>
+				<li>Oman</li>
+				<li>Jordan</li>
+				<li>Saudi arabia</li>
+				<li>Suriname</li>
+				<li>Israel</li>
+			</ol>
+			</div>
+		</div>
+		
+		<div class="lybia">
+			<h2>No, the other way around!</h2>
+			<p><span class="fail-bad mediumnumber">1820 × «Lybia»</span><br/>Most frequent incorrect guess.</p>
+		</div>
+
+		<div class="morocco">
+			<h2>🇲🇦😬</h2>
+			<p>Marocco, Morroco, Morrocco, Maroco, Moroco, Marroco, Marrocco, Maroc, Morocoo, Marokko, Moracco, Morraco, Maroko, Moraco, Morocca, Morracco, Marocko, Marroc, Marrocos, Marroko, Morocci, Morocc, Marocoo, Marrokko, Morokko, Maracco, Marocc, Morroc,...(and these are only the misspellings that appeared more than 10 times each)</p>
+		</div>
+		
+		
+		<div class="compass">
+			<h2>Nice try, there.</h2>
+			
+			
+			
+			<p>North Africa<br>
+				2.5‰
+			</p>
+			
+			<p>West Africa 8‰&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;East Africa 1‰</p>
+		</div>
+
+		
+	</div>
+	
+	</div>
+	
+	
+	
+</div>	
+
+</div> <!-- wrapper -->
+<footer>
+	<p>Total number of attempts: <span class="attempts">21723</span>. Last updated: June 10 2020.<br/>These numbers are obviously not representative for a general public, mainly because people who self-select to play such a game are probably more likely to know a good amount of African countries. Further caveat: This <a href="https://www.reddit.com/r/dataisbeautiful/comments/gzjvwx/african_countries_people_can_name_from_memory_oc/" target="_blank">blew up on Reddit</a>, which potentially skewed the data quite a bit.<br><br><sup>*</sup>If you enter «Congo», the game assumes you mean the DRC (just like Google does). «Congo» in the stats includes all variations of DRC, but not of the «Republic of the Congo». This explains why «Congo» ranks quite high and the more specific «Republic of the Congo» quite low.</p>
+	<div class="credit">Made by <a href="https://www.davidbauer.ch">David Bauer</a> (<a href="https://www.twitter.com/davidbauer">@davidbauer</a>). Font from <a href="http://www.losttype.com/font/?name=homestead">Lost Type</a>. German country names available thanks to <a href="http://www.losttype.com/font/?name=homestead">Jens Kubieziel</a>.</div>
+</footer>
+
+
+</body>
+
+</html>

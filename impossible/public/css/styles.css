@@ -1,0 +1,396 @@
+.canvas {
+  position: relative;
+/*
+  top: 30px;
+  margin-bottom: 30px;
+*/
+  background: #415353;
+  color: white;
+}
+
+/*
+header.game {
+  position: absolute;
+  color: white;
+	top: 10%;
+	left: 15px;
+	width: 320px;
+  text-shadow: 0 0 2px black,
+               0 0 5px black;
+  z-index: 10000;
+  text-align: center;
+}
+body.no-difficult-game .difficult-game {
+  display: none;
+}
+*/
+
+
+
+#map {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+#svg-container {
+  z-index: 50;
+position: absolute;
+  top: 30px;
+  bottom: 50px;
+/*   left: 350px; */
+left:15%;
+  right: 0;
+}
+#map svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+#neighborhood-guess-wrapper {
+  float: left;
+  left: 50%;
+  padding-left: 0px;
+  position: relative;
+  pointer-events: none;
+}
+body.main-menu #neighborhood-guess-wrapper,
+body.main-menu #count-time-wrapper-wrapper {
+  display: none;
+}
+#neighborhood-guess {
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 0;
+  float: left;
+  position: relative;
+  right: 50%;
+  top: -5px;
+  padding: 10px 20px;
+  z-index: 1000;
+  text-align: center;
+  pointer-events: none;
+  font-size: 21px;
+  font-weight: 300;
+  display: none;
+}
+#neighborhood-guess.visible {
+  display: block;
+}
+#neighborhood-guess .name {
+  font-weight: 600;
+  font-size: 35px;
+  letter-spacing: -1px;
+  line-height: 1;
+  display: block;
+}
+#count-time-wrapper-wrapper {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: none;
+}
+#count-time-wrapper-wrapper.visible {
+  display: block;
+}
+#count-time-wrapper {
+  float: left;
+  left: 50%;
+  padding-left: 0px;
+  position: relative;
+  pointer-events: none;
+}
+#count-time {
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 0;
+  float: left;
+  position: relative;
+  right: 50%;
+  top: -5px;
+  padding: 10px 20px;
+  padding-bottom: 15px;
+  z-index: 1000;
+  text-align: center;
+  pointer-events: none;
+  font-size: 21px;
+  font-weight: 300;
+}
+#count {
+  display: block;
+  margin: 0 auto;
+}
+#count-time-wrapper-wrapper .time {
+  display: block;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 35px;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+#map .neighborhood-boundary {
+  fill: none;
+}
+#map .neighborhood.unguessed {
+  stroke-width: 1;
+  stroke: white;
+  fill: rgba(0, 0, 0, 0.6);
+  -webkit-transition: fill 300ms;
+  -moz-transition: fill 300ms;
+}
+#map .neighborhood[inactive] {
+  fill: rgba(128, 128, 128, 0.75);
+}
+body:not(.touch-active) #map .neighborhood:not([inactive]):hover {
+  cursor: pointer;
+  fill: rgba(247, 148, 29, 0.5);
+  -webkit-transition: fill 50ms;
+  -moz-transition: fill 50ms;
+}
+body:not(.touch-active) #map .neighborhood[inactive]:hover {
+  fill: rgba(108, 108, 108, 0.775);
+  -webkit-transition: fill 50ms;
+  -moz-transition: fill 50ms;
+}
+#map .neighborhood.guessed {
+  stroke: white;
+  fill: rgba(0, 255, 0, 0.25);
+}
+body:not(.touch-active) #map .neighborhood.guessed:hover {
+  stroke: white;
+  fill: rgba(154, 188, 18, 0.375);
+}
+#map .neighborhood.right-guess {
+  -webkit-animation-name: blink;
+  -webkit-animation-duration: 500ms;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: blink;
+  -moz-animation-duration: 500ms;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-name: blink;
+  -ms-animation-duration: 500ms;
+  -ms-animation-iteration-count: infinite;
+  animation-name: blink;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+}
+#map .neighborhood.wrong-guess {
+  fill: rgba(255, 0, 0, 0.7) !important;
+  stroke: white;
+}
+#map .neighborhood.guessed-animation {
+  stroke: transparent;
+  fill: rgba(0, 255, 0, 0.25);
+  pointer-events: none;
+  z-index: 99999;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 500ms, fill 500ms;
+  -moz-transform-origin: 50% 50%;
+  -moz-transition: -moz-transform 500ms, fill 500ms;
+}
+#map .neighborhood.guessed-animation.animate {
+  -webkit-transform: scale(3);
+  -moz-transform: scale(3);
+  fill: transparent;
+}
+@-webkit-keyframes blink {
+  0%,
+  49.99% {
+    fill: rgba(0, 255, 0, 0.25);
+  }
+  50%,
+  100% {
+    fill: rgba(0, 0, 0, 0.6);
+  }
+}
+@-ms-keyframes blink {
+  0%,
+  49.99% {
+    fill: rgba(0, 255, 0, 0.25);
+  }
+  50%,
+  100% {
+    fill: rgba(0, 0, 0, 0.6);
+  }
+}
+@keyframes blink {
+  0%,
+  49.99% {
+    fill: rgba(0, 255, 0, 0.25);
+  }
+  50%,
+  100% {
+    fill: rgba(0, 0, 0, 0.6);
+  }
+}
+#cover {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  text-align: center;
+  letter-spacing: 0;
+  background: rgba(65, 83, 83, 0.8);
+  font-weight: 300;
+  text-shadow: 0 0 2px black, 0 0 5px black;
+  display: none;
+  box-sizing: border-box;
+  color: white;
+  width: 100%;
+  height: 100%;
+
+}
+#cover.visible {
+  display: table;
+}
+
+.noshadow {text-shadow: none;}
+
+/*
+button .neighborhoods-removed-disclaimer {
+  font-size: 80%;
+  line-height: 0;
+  position: relative;
+  top: -5px;
+  padding-left: 1px;
+}
+p.neighborhoods-removed-disclaimer, .bigscreenhint {
+  font-size: 12px;
+  display: block;
+  margin-top: 10px;
+  line-height: 14px;;
+}
+p.neighborhoods-removed-disclaimer sup {
+  padding-right: 2px;
+}
+*/
+
+#intro {   font-size: 28px;
+}
+
+#congrats p {font-size: 20px;}
+
+#congrats h1 {font-size: 40px;}
+
+#cover > div {
+  display: none;
+  width: 100%;
+/*   max-width: 500px; */
+  vertical-align: middle;
+}
+
+br.rwd-break {
+	display:block;
+}
+
+#cover > div.visible {
+  display: table-cell;
+}
+#cover > div > div {
+/*   padding-left: 350px; */
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.small {
+  font-size: 80%;
+}
+.small img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin: 0 5px;
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+}
+a {
+  color: inherit;
+}
+
+body:not(.neighborhoods-removed) .neighborhoods-removed-disclaimer {
+  display: none;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+
+
+
+/* tablets and larger */
+@media only screen and (min-device-width : 736px) {
+	
+	#share-via-whatsapp {
+		display: none;
+	}
+	
+	br.rwd-break {
+	display:none;
+	}
+
+		
+	.mobileonly {
+		display: none;
+	}
+	
+}
+
+
+
+/* mobile */
+@media only screen and (max-device-width : 768px) {
+	
+	#share-via-email {display: none;}
+	
+	.canvas {
+		top:-0px;
+		margin-bottom:0;
+	}
+	
+	#svg-container {
+	  z-index: 50;
+	  position: absolute;
+	  top: 40px;
+	  bottom: 0px;
+	  left: 5%;
+	  right: 0;
+	}
+	
+	#cover > div > div {
+	  padding: 0px 10px;
+	  max-width: 540px;
+	  margin: 0 auto;
+	}
+		
+	#maps-background {
+		display: none;
+	}
+		
+	#neighborhood-guess-wrapper {
+	  float: left;
+	  margin: 0 auto;
+	  padding-left: 0px;
+	  pointer-events: none;
+	}
+	
+	
+	#map .neighborhood[inactive] {
+	  fill: rgba(248, 159, 52, 0.1);
+	}
+	
+	#count-time-wrapper {
+	  float: left;
+	  margin: 0 auto;
+	  padding-left:0px;
+	  pointer-events: none;
+	}
+	
+/*
+	.difficult-game, .neighborhoods-removed-disclaimer {
+		display: none;
+	}
+*/
+	
+		
+}

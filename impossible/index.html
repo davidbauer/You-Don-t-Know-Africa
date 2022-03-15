@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<link rel="stylesheet" href="style.css" type='text/css'>
+<link rel='stylesheet' href='public/css/styles.css' type='text/css'> 
+
+<script src="script.js"></script>
+<title>You Don't Know Africa 😱IMPOSSIBLE EDITION😱</title>
+<meta name="description" content="Country names, flags and geography, all merged into one impossible challenge." />
+<meta name="author" content="David Bauer" />
+<meta name="Content-Language" content="en" />
+<meta name="keywords" content="Africa, game, You Don't Know Africa" />
+
+<!-- Facebook metadata -->
+<meta property="og:title" content="You Don't Know Africa 😱IMPOSSIBLE EDITION😱"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="http://www.youdontknowafrica.com/impossible"/>
+<meta property="og:image" content="https://youdontknowafrica.com/impossible/images/teaser-impossible.png"/>
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="fb:app_id" content="777235462302407" />
+<meta property="og:description" content="Country names, flags and geography, all merged into one impossible challenge."/>
+   
+<!-- Twitter metadata -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@davidbauer">
+<meta name="twitter:title" content="You Don't Know Africa 😱IMPOSSIBLE EDITION😱">
+<meta name="twitter:description" content="Country names, flags and geography, all merged into one impossible challenge.">
+<meta name="twitter:image" content="https://youdontknowafrica.com/impossible/images/teaser-impossible.png">
+
+<! Plausible Analytics -->
+
+<script defer data-domain="youdontknowafrica.com" src="https://plausible.io/js/plausible.js"></script>
+
+
+</head>
+<body>
+
+<div id="part-one">
+	
+	<div id="wrapper">
+
+	<div class="easteregg"></div>
+	
+	<div id="logo">You Don't Know Africa<br><span class="season shake">😱IMPOSSIBLE EDITION😱</span></div>
+	
+	<div id="mainintro" class="pregame">
+		<p>You've mastered <a href="../">all parts of the series</a>. Think you're ready for the impossible?</p>
+		<p>Here's your challenge:</p>
+		<p><span class="noshadow">1️⃣</span> Name all 54 African countries from memory</p>
+		<p><span class="noshadow">2️⃣</span> Find all African countries on the map, with a twist</p>
+		<p>As fast as you can, of course</p>
+	</div>
+	
+	<button onclick='startPartOne()' class="pregame">Start the game</button>
+	
+	<button onclick='startPartOne();gameSuccess()' class="pregame smaller testing hidden">Test: Success</button>
+	<button onclick='startPartOne();gameFail("timeout");timeOver = true;stopTimer();' class="pregame smaller testing hidden">Test: Fail</button>
+	
+	<p class="pregame">So far, <span class="noOfPlays">312</span> brave souls have tried it, <span class="noOfFinishers">30</span> crazy ones have succeeded.
+	
+	
+	<div id="challenge" class="pregame">
+            
+            <p>Challenge a friend (or foe)</p>
+            
+            <div class="sharebuttons">
+              <a id='challenge-via-whatsapp' class='whatsapp button smaller' href="whatsapp://send?text=Country%20names,%20flags%20and%20geography,%20all%20merged%20into%20one%20impossible%20challenge.%20Can%20you%20make%20it? https%3A%2F%2Fwww.youdontknowafrica.com%2Fimpossible" target="_blank">Share via Whatsapp</a>
+              <a id='challenge-via-facebook' class='facebook button smaller' href="https://www.facebook.com/dialog/feed?app_id=777235462302407&redirect_uri=https%3A%2F%2Fwww.youdontknowafrica.com%2Fimpossible&display=page&link=https%3A%2F%2Fwww.youdontknowafrica.com%2Fimpossible&name=You%20Don't%20Know%20Africa%20😱IMPOSSIBLE%20EDITION😱&description=Country%20names,%20flags%20and%20geography,%20all%20merged%20into%20one%20impossible%20challenge.%20Can%20you%20make%20it?&picture=https://youdontknowafrica.com/impossible/images/teaser-impossible.png" target="_blank">Share on Facebook</a>
+              <a id='challenge-via-twitter' class='twitter button smaller' href="https://twitter.com/intent/tweet?text=Country%20names,%20flags%20and%20geography,%20all%20merged%20into%20one%20impossible%20challenge.%20Can%20you%20make%20it?&url=https%3A%2F%2Fwww.youdontknowafrica.com%2Fimpossible&via=davidbauer" target="_blank">Share on Twitter</a>
+              <a id='challenge-via-email' class='email button smaller' href="mailto:?subject=You Don't Know Africa 😱IMPOSSIBLE EDITION😱&body=Country names, flags and geography, all merged into one impossible challenge. Can you make it? Check out this game I found: https://www.youdontknowafrica.com/impossible" target="_blank">Share via Email</a>
+            </div>
+     </div>
+	
+	<div class="howto ingame hidden">
+		<p>Name all African countries as quickly as you can. Hit enter after typing a country.</p>
+	</div>
+	
+	<div class="timer ingame hidden">0:00</div>
+	
+	<form id="countryguess" class="ingame hidden">
+		<input type="text" id="userguess" autofocus autocomplete="off"><br/>
+		<input type="submit" value="Submit" class="button">
+	</form>
+	
+	
+	<div id="results" class="ingame hidden">
+		
+		<div id="counter">You've got <span id="correctCount">0</span>/54</div>
+		
+		<div id="correctcountries"></div>
+		
+ 		<button onclick='gameFail("giveup");stopTimer();' class="smaller giveup">I give up!</button>
+	</div>	
+		
+	<div id="feedbackhint" class="hidden">For each country, a number of ways to write it are accepted. Think one is missing? Tell me at ydka@davidbauer.ch</div>
+	
+	<div id='endmessage' class='aftergame hidden'>
+   
+            <p>
+              Nice!<br/>
+              Part One completed in <span class='timer'></span>!
+            </p>
+
+     </div>
+
+     
+     <div id="missedcountries" class="aftergamefail hidden">
+     	<p>You didn't think of </p>
+     </div>     
+     
+     <div id='tryagain' class='aftergamesuccess hidden'>
+          
+			
+              <button onclick='preparePartTwo()' class="redo-button">Go to Part Two</button>
+			
+
+     </div>
+     
+     <div id="failed" class="aftergamefail hidden">
+     	     	
+     	<p>
+          <button onclick='reloadPage()'>Try again</button>
+        </p>
+
+     </div>
+     
+     </div> <!-- wrapper -->
+     
+     </div> <!-- part one -->
+     
+     
+     <div id="part-two" class="hidden">
+	    
+	    <div class='canvas'>
+    
+    <div id='map'>
+
+      <div id='svg-container'></div>    
+      <div id='neighborhood-hover'>
+        <span></span>
+      </div>    
+
+      <div id='cover'>
+        <div id='loading'>
+          <div>
+            Loading…
+          </div>
+        </div>
+        <div id='intro'>
+          <div>
+	        <p>Welcome to part two of</p>
+            
+            <div id="logo inline">You Don't Know Africa<br><span class="season">😱IMPOSSIBLE EDITION😱</span></div>
+            
+            <p>Find all countries on the map, as fast as you can. A little catch: no names, just flags.</p>
+             
+            
+            <button onclick='startGame(false)'>Start part two</button>
+<!--             <button onclick='startGame(true)'>Start part two (Testing)</button> -->
+            
+			
+          </div>
+			
+        </div>
+
+        <div id='congrats'>
+          <div>
+            <h1>
+              Wowwowwow! 
+            </h1>
+            <p>You made it! You completed</p>
+              
+              <div id="logo" class="inline">You Don't Know Africa<br><span class="season">😱IMPOSSIBLE EDITION😱</span></div>
+              
+            <p>in <span class='endtime'></span>!</p>
+            
+            
+            <div id="sharing" class="aftergame hidden">
+            <div class="sharebuttons">
+              <a id='share-via-whatsapp' class='whatsapp button smaller' target="_blank">Share result via Whatsapp</a>
+              <a id='share-via-facebook' class='facebook button smaller' target="_blank">Share result on Facebook</a>
+              <a id='share-via-twitter' class='twitter button smaller' target="_blank">Share result on Twitter</a>
+              <a id='share-via-email' class='email button smaller' target="_blank">Share via Email</a>
+            </div>
+            </div>
+            
+      
+     </div>
+
+            
+            
+            <div class="crosspromo aftergame hidden">Liked it? <a href="https://www.buymeacoffee.com/davidbauer">Buy me a coffee</a> and sign up for my <a href="https://www.weeklyfilet.com?ref=ydka" target="_blank">newsletter</a>.</div>
+            
+  
+          
+          </div>
+        </div>
+      </div>
+
+      <div id='neighborhood-guess-wrapper'>
+        <div id='neighborhood-guess'>
+          <span class='click-verb capitalize'></span>
+          <span class='name'></span>
+        </div>    
+      </div>
+
+      <div id='count-time-wrapper-wrapper'>
+        <div id='count-time-wrapper'>
+          <div id='count-time'>
+            <span id='count'></span>
+            <span class='time'></span>
+          </div>    
+        </div>
+      </div>
+
+    </div>
+  </div>
+	     
+	 </div> <!-- part two -->
+
+
+
+
+
+<footer class="credit pregame">
+	<div>Made by <a href="https://www.davidbauer.ch">David Bauer</a> (<a href="https://www.twitter.com/davidbauer">@davidbauer</a>). Font from <a href="http://www.losttype.com/font/?name=homestead">Lost Type</a>. Parts of the code adapted from: <a target='_blank' href='https://github.com/codeforamerica/click_that_hood'>Code for America</a>. Country borders from <a href="https://geocommons.com/" target='_blank'>Geocommons</a>.
+    </div>
+</footer>
+
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+
+<script>
+ var playsDB = new Firebase('https://ydka-impossible-default-rtdb.firebaseio.com/');
+ var finishersDB = new Firebase('https://ydka-impossible-finishers-default-rtdb.firebaseio.com/');
+</script>
+
+
+</body>
+
+</html>

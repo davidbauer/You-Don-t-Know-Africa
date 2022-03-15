@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Homestead';
   font-display: auto;
-  src: url('../public/fonts/Homestead-Regular.ttf');
+  src: url('/1/public/fonts/Homestead-Regular.ttf');
 }
 html {
   height: 100%;
@@ -80,15 +80,6 @@ footer .crosspromo, footer .crosspromo a {
 }
 
 .hidden {display: none;}
- 
- 
- 
- 
- 
- 
- 
- 
- 
     
 .goodguess {
   animation-name: flashgreen;
@@ -136,9 +127,6 @@ footer .crosspromo, footer .crosspromo a {
 
 
 .alert {color:yellow;}
-
-
-
 
 .submithint {
 	font-size:70%;
@@ -306,6 +294,7 @@ margin-top: 70px;
 	}
 
 
+
 /* tablets and larger */
 @media only screen and (min-device-width : 736px) {
 	
@@ -359,10 +348,13 @@ margin-top: 70px;
 	.countrybreakdown .cb-c {
 		max-width: 100px;
 	}
+	
 	.countrybreakdown .cb-v span {
 	font-size: 50%;
 	
-}
+	}
+	
+	.compass {margin-bottom: 100px;}
 		
 }
 

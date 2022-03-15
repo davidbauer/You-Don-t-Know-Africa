@@ -1,0 +1,355 @@
+@font-face {
+  font-family: 'Homestead';
+  font-display: auto;
+  src: url('/1/public/fonts/Homestead-Regular.ttf');
+}
+html {
+  height: 100%;
+    font-family: 'Homestead', Arial, Helvetica, sans-serif;
+    color: white;
+	text-shadow: 0 0 2px black,
+               0 0 5px black;
+}
+
+body {
+  background: #415353;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  overflow-x: hidden;
+  min-height: 100%;
+}
+
+.cover {
+  background-image: url(https://www.youdontknowafrica.com/3/images/background.png);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+#wrapper {
+	width: 90%;
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#logo {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: .9;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 0;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-rendering: optimizeLegibility;
+}
+
+
+.season {
+	color: #f89f34;
+	font-style: italic;
+	margin-left: -7px;
+}
+
+
+#countryguess input[type=text] {
+  width: 100%;
+  max-width: 500px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 0px;
+  font-family: 'Homestead', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+
+}
+
+/* .flagtoguess {font-size:100px;text-shadow: 0 0 1px black, 0 0 40px black;} EMOJI VERSION*/
+.flagtoguess img {height:100px;margin: 10px auto;box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16);}
+
+.answeroptions {margin:10px auto;}
+.answeroption {padding:10px;border-radius:5px;background:#415353;width: 100%;max-width: 300px;display:block;margin: 5px auto;border: 1px #869886 solid;font-size:130%;}
+/* .answeroption:hover {background:#869886; border: 1px #869886 solid;cursor: pointer; } */
+
+footer {
+margin: 20px auto 20px;
+color: #869886;
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+}
+
+footer a {color: #869886;}
+
+footer .crosspromo, footer .crosspromo a {
+	color: #e6e667;
+}
+
+.hidden {display: none;}
+    
+.goodguess {
+  animation-name: flashgreen;
+  animation-duration: 1s;
+} 
+
+.badguess {
+  animation-name: flashred;
+  animation-duration: 1s;
+} 
+
+.gamesuccess {
+  background: green;
+  animation-name: finalflash;
+  animation-duration: 0.3s;
+  animation-iteration-count: 3;
+
+} 
+
+
+@keyframes flashgreen {
+  0%   {background-color: green;}
+  100% {background-color: #415353;}
+}
+
+
+@keyframes flashyellow {
+  0%   {background-color: #f89f34;}
+  100% {background-color: #415353;}
+}
+
+@keyframes flashred {
+  0%   {background-color: #f84634;}
+  100% {background-color: #415353;}
+}
+
+@keyframes finalflash {
+  0%   {background-color: #415353;}
+  50% {background-color: green;}  
+}
+
+
+
+.alert {color:yellow;}
+
+
+#endmessage p {
+	font-size: 30px;
+}
+
+
+button,
+a.button {
+  font-size: 28px;
+  font-weight: 600;
+  padding: 10px 50px;
+  margin: 0;
+  border: none;
+  border-radius: 5px;
+  background: #f89f34;
+  -webkit-transition: background 150ms;
+  -moz-transition: background 150ms;
+  transition: background 150ms;
+  color: black;
+  text-shadow: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Homestead', Arial, Helvetica, sans-serif;
+}
+button:hover,
+a.button:hover {
+  background: #fbca8e;
+}
+button:active,
+a.button:active {
+  background: #fdead2;
+}
+button.smaller,
+a.button.smaller {
+  font-weight: 400;
+  padding: 10px 20px;
+  font-size: 80%;
+}
+
+button.medium,
+a.button.medium {
+  font-weight: 400;
+  padding: 10px 20px;
+  font-size: 100%;
+}
+
+#sharing {
+	margin: 30px auto;
+}
+
+#challenge {margin-top:150px;}
+
+.sharebuttons {display: inline-block;}
+
+.sharebuttons a {
+  margin: 10 auto;
+  padding: 0;
+  max-width: 200px;
+}
+
+a.facebook {
+	background: #3B5998;
+	color: white;	
+}
+
+a.whatsapp {
+	background: #43d854;
+	color: white;	
+}
+
+a.facebook:hover {
+	background: rgba(60, 90, 153, 0.85);
+}
+
+a.twitter {
+	background: #4099FF;
+	color: white;	
+}
+
+a.twitter:hover {
+	background: rgba(63, 153, 255, 0.85);
+}
+
+a.email {
+	background: #848484;
+	color: white;	
+}
+
+a.email:hover {
+	background: #666;
+}
+
+/* easteregg */
+
+.easteregg {
+  top: -20%;
+  position: absolute;
+}
+
+
+.easteregg-active {
+ animation: falldown 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes falldown {
+  100% { top: 120%; }
+} 
+
+
+/* stats specific styles */
+
+.bignumber {
+	font-size: 300%;
+	color: #f89f34;
+}
+
+.mediumnumber {
+	font-size: 150%;
+	color: #f89f34;
+}
+
+#results a {color:white;}
+
+#results p {font-size: 120%;}
+
+.countrybreakdown table {
+	margin: 0 auto;
+	width: 100%;
+	background: gray;
+	padding: 10px;
+}
+
+
+.countrybreakdown .cb-c {
+	text-align: right;
+}
+
+.countrybreakdown .cb-v {
+	text-align: left;
+	padding-left: 1%;
+}
+
+.countrybreakdown .cb-v span {
+	font-size: 50%;
+}
+
+h2 {
+font-size: 200%;
+margin-top: 70px;
+}
+
+
+/* devices that have hover states (to avoid sticky hover styles */
+@media (hover: hover) {
+    .answeroption:hover {background:#869886; border: 1px #869886 solid;cursor: pointer; }
+
+}
+
+
+/* tablets and larger */
+@media only screen and (min-device-width : 736px) {
+	
+	.whatsapp {
+		display: none;
+	}
+	
+	footer {margin-top: 200px;}
+		
+}
+
+
+/* mobile */
+@media only screen and (max-device-width : 768px) {
+	
+	#logo {
+		margin-top: 30px;
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+	
+	.email {display: none;}	
+	
+	button,
+	a.button {
+	font-size: 180%;
+	}
+		
+	button.smaller,
+	a.button.smaller {
+	  font-weight: 400;
+	  padding: 10px 20px;
+	  font-size: 100%;
+	  margin: 0 10px 15px 10px;
+	}
+	
+	.sharebuttons a {
+		display: block;
+		max-width: 250px;
+	}
+	
+	#challenge {margin-top:100px;}
+	
+	.credit {font-size: 11px;}
+
+	
+	.answeroption:active {background:#869886; border: 1px #869886 solid;}
+
+	.countrybreakdown table {font-size:10px;padding:10px 0;}
+	.countrybreakdown tbody {}
+	
+	#morestats {margin: 0px -8px;}
+}
+
+/* webapp mode */
+@media all and (display-mode: standalone) {
+  	
+}
+

@@ -1,0 +1,166 @@
+/*@import 'http://fonts.googleapis.com/css?family=Open+Sans:300,400';*/
+@font-face {
+  font-family: 'Homestead';
+  font-display: auto;
+  src: url('/1/public/fonts/Homestead-Regular.ttf');
+}
+html {
+  height: 100%;
+  font-family: 'Homestead', Arial, Helvetica, sans-serif;
+}
+body {
+  background: #415353;
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  overflow-x: hidden;
+  min-height: 100%;
+  color:white;
+  text-align: center;
+}
+
+#header {
+	width:90%
+	max-width: 600px;
+	margin:10px auto;
+}
+
+#header h1 {font-size: 300%;margin-bottom: 10px;}
+#header h4 {font-size: 115%;margin-top: 10px;}
+
+#selection {width:100%;max-width: 1000px;margin:10px auto;display: flex;justify-content:center;}
+
+#selection a {text-decoration: none;color:inherit;}
+
+.card {width:400px;flex-basis:  | auto;margin: 10px 20px;background:rgba(127, 127, 127, 0.5);padding:10px;border-radius: 5px;}
+
+.card:hover {background: green;}
+
+.card img {width: 100%;}
+
+#impossible img {width: 100%;max-width: 400px;margin-top:-20px;}
+
+#credits {margin-bottom: 50px;}
+
+#credits a {color:inherit;margin-bottom: 20px;}
+
+
+button,
+a.button {
+  font-size: 28px;
+  font-weight: 600;
+  padding: 10px 50px;
+  margin: 0;
+  border: none;
+  border-radius: 5px;
+/*
+  background: #f89f34;
+  -webkit-transition: background 150ms;
+  -moz-transition: background 150ms;
+*/
+  transition: background 150ms;
+  color: black;
+  text-shadow: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Homestead', Arial, Helvetica, sans-serif;
+}
+button:hover,
+a.button:hover {
+  background: #fbca8e;
+}
+button:active,
+a.button:active {
+  background: #fdead2;
+}
+button.smaller,
+a.button.smaller {
+  font-weight: 400;
+  padding: 10px 20px;
+  font-size: 60%;
+}
+
+#share {width:60%;margin:30px auto 50px;}
+
+.sharebuttons {display: inline-block;}
+
+.sharebuttons a {
+  margin: 10 auto;
+  padding: 0;
+  max-width: 200px;
+}
+
+a.facebook {
+	background: #3B5998;
+	color: white;	
+}
+
+a.whatsapp {
+	background: #43d854;
+	color: white;	
+}
+
+a.facebook:hover {
+	background: rgba(60, 90, 153, 0.85);
+}
+
+a.twitter {
+	background: #4099FF;
+	color: white;	
+}
+
+a.twitter:hover {
+	background: rgba(63, 153, 255, 0.85);
+}
+
+a.email {
+	background: #848484;
+	color: white;	
+}
+
+a.email:hover {
+	background: #666;
+}
+
+/* tablets and larger */
+@media only screen and (min-device-width : 736px) {
+	
+	#challenge-via-whatsapp {
+		display: none;
+	}
+	
+	.mobileonly {
+		display: none;
+	}
+	
+}
+
+/* mobile */
+@media only screen and (max-device-width : 768px) {
+	
+button,
+	a.button {
+	font-size: 180%;
+	}
+		
+	button.smaller,
+	a.button.smaller {
+	  font-weight: 400;
+	  padding: 10px 20px;
+	  font-size: 100%;
+	  margin: 0 10px 15px 10px;
+	}
+	
+	.sharebuttons a {
+		display: block;
+		max-width: 250px;
+	}
+	
+	#selection {flex-direction: column;}
+	
+	.card {width:90%;margin:10px;}
+	
+	.desktoponly {display:none;}
+	
+}
+

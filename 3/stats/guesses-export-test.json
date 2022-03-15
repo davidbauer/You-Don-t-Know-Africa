@@ -1,0 +1,311 @@
+
+{
+  "-MqFPNhrbJ2EiwJzIjb7" : {
+    "correct" : true,
+    "country" : "Angola"
+  },
+  "-MqFPO8KqnyxNlHwa7KE" : {
+    "correct" : true,
+    "country" : "Burkina Faso"
+  },
+  "-MqFPOf5t44RviQA2rCK" : {
+    "correct" : false,
+    "country" : "Sierra Leone"
+  },
+  "-MqFPetX-CVIvVddijwW" : {
+    "correct" : false,
+    "country" : "São Tomé and Príncipe"
+  },
+  "-MqFPfjtwaeRTM2IabDn" : {
+    "correct" : false,
+    "country" : "Uganda"
+  },
+  "-MqFPgjmfaM5DX59YG_0" : {
+    "correct" : false,
+    "country" : "Burkina Faso"
+  },
+  "-MqFPhl8uQ_Mf_65exnv" : {
+    "correct" : false,
+    "country" : "Seychelles"
+  },
+  "-MqFPiTW8wdewhXkf8-h" : {
+    "correct" : true,
+    "country" : "Ghana"
+  },
+  "-MqFPj2eZqo4ILRlzpZ_" : {
+    "correct" : false,
+    "country" : "Angola"
+  },
+  "-MqFPjUuBR-MJc2s6keA" : {
+    "correct" : false,
+    "country" : "The Gambia"
+  },
+  "-MqFPkGtW3NI60MYGRsX" : {
+    "correct" : false,
+    "country" : "Kenya"
+  },
+  "-MqFPkmGYaj82xzKAhw6" : {
+    "correct" : false,
+    "country" : "Burundi"
+  },
+  "-MqFPlFW0ICOFib_Gd1E" : {
+    "correct" : false,
+    "country" : "Cape Verde"
+  },
+  "-MqFPltepZoRFfnjRMEo" : {
+    "correct" : false,
+    "country" : "Ethiopia"
+  },
+  "-MqFPmjexYLAz1HXpQFF" : {
+    "correct" : true,
+    "country" : "Comoros"
+  },
+  "-MqFPnQGBtsuFyw7L8eL" : {
+    "correct" : false,
+    "country" : "Mozambique"
+  },
+  "-MqFPo5WNuDBSX14PwDw" : {
+    "correct" : true,
+    "country" : "Madagascar"
+  },
+  "-MqFPoq8DdRN__HeFXMs" : {
+    "correct" : true,
+    "country" : "Nigeria"
+  },
+  "-MqFPpYPeWviOJygeoQ0" : {
+    "correct" : false,
+    "country" : "Rwanda"
+  },
+  "-MqFPq51FIkiZDQ-RSt1" : {
+    "correct" : false,
+    "country" : "Namibia"
+  },
+  "-MqFPq_eHDP1EtFw6B5x" : {
+    "correct" : true,
+    "country" : "Benin"
+  },
+  "-MqFPr48xZ0YiYTu678E" : {
+    "correct" : true,
+    "country" : "Mauritius"
+  },
+  "-MqFPretWWd6X4BY5kGD" : {
+    "correct" : false,
+    "country" : "Zambia"
+  },
+  "-MqFPsZPq6KPD96lfP53" : {
+    "correct" : false,
+    "country" : "São Tomé and Príncipe"
+  },
+  "-MqFPuJPyiG47GLDQWCo" : {
+    "correct" : false,
+    "country" : "Uganda"
+  },
+  "-MqFPv9mEL7ejjdz92Ks" : {
+    "correct" : false,
+    "country" : "Burkina Faso"
+  },
+  "-MqFPvvuexoVci7-Vw9_" : {
+    "correct" : true,
+    "country" : "Seychelles"
+  },
+  "-MqFPwoOp2-OLgUwYpD2" : {
+    "correct" : false,
+    "country" : "Angola"
+  },
+  "-MqFPxX97IVi9d8MXi6a" : {
+    "correct" : true,
+    "country" : "The Gambia"
+  },
+  "-MqFPy68ey1PYO4bq33B" : {
+    "correct" : true,
+    "country" : "Kenya"
+  },
+  "-MqFPyfWwRK4iTenLYJt" : {
+    "correct" : false,
+    "country" : "Burundi"
+  },
+  "-MqFPzpGnuofmJ0tUaHY" : {
+    "correct" : true,
+    "country" : "Cape Verde"
+  },
+  "-MqFQ-QOtc79xxf9Ccoe" : {
+    "correct" : false,
+    "country" : "Ethiopia"
+  },
+  "-MqFQ0IlF5lG16kR1MqK" : {
+    "correct" : false,
+    "country" : "Mozambique"
+  },
+  "-MqFQ0q9J10_miBIiG0Y" : {
+    "correct" : false,
+    "country" : "Rwanda"
+  },
+  "-MqFQ1blvQqaYhz8gu0C" : {
+    "correct" : true,
+    "country" : "Namibia"
+  },
+  "-MqFQ2VO6DRCXNsXphEn" : {
+    "correct" : false,
+    "country" : "Zambia"
+  },
+  "-MqFQ3BeSiT3NO42Dpzr" : {
+    "correct" : false,
+    "country" : "São Tomé and Príncipe"
+  },
+  "-MqFQ44mex-td_9ktZD_" : {
+    "correct" : false,
+    "country" : "Uganda"
+  },
+  "-MqFQ5-PVazLeacB9-1q" : {
+    "correct" : false,
+    "country" : "Burkina Faso"
+  },
+  "-MqFQ5aG_-_gmqcRxYzn" : {
+    "correct" : false,
+    "country" : "Angola"
+  },
+  "-MqFQ67d-aLmp4s17NAE" : {
+    "correct" : false,
+    "country" : "Burundi"
+  },
+  "-MqFQ6bGdEP9vF1JgdaR" : {
+    "correct" : false,
+    "country" : "Ethiopia"
+  },
+  "-MqFQ7Fuaa6dAgPTEfIs" : {
+    "correct" : false,
+    "country" : "Mozambique"
+  },
+  "-MqFQ7hl3fM_FR0CMShy" : {
+    "correct" : false,
+    "country" : "Rwanda"
+  },
+  "-MqFQ828XiJYBKVVI5g3" : {
+    "correct" : false,
+    "country" : "Zambia"
+  },
+  "-MqFQ908BDNbwTXqd7j4" : {
+    "correct" : false,
+    "country" : "Ghana"
+  },
+  "-MqFQ9EtFSuzrj1yan5L" : {
+    "correct" : false,
+    "country" : "São Tomé and Príncipe"
+  },
+  "-MqFQA4Wt-A3zSaI4YW-" : {
+    "correct" : false,
+    "country" : "Uganda"
+  },
+  "-MqFQB-OBnMCfE1NhH6U" : {
+    "correct" : false,
+    "country" : "Burkina Faso"
+  },
+  "-MqFQBYlAKf4rLb8MsjD" : {
+    "correct" : false,
+    "country" : "Angola"
+  },
+  "-MqFQC914NkMsbuJaKo9" : {
+    "correct" : false,
+    "country" : "Burundi"
+  },
+  "-MqFQCmld8_U7QYVJIuA" : {
+    "correct" : false,
+    "country" : "Ethiopia"
+  },
+  "-MqFQDPOoq6-kOiaeK3E" : {
+    "correct" : false,
+    "country" : "Mozambique"
+  },
+  "-MqFQDu8SlyxxfJ-DJIg" : {
+    "correct" : true,
+    "country" : "Rwanda"
+  },
+  "-MqFQEt1lEpDgGFBAkqX" : {
+    "correct" : false,
+    "country" : "Zambia"
+  },
+  "-MqFQFP8ywE8EHZYkUI4" : {
+    "correct" : false,
+    "country" : "São Tomé and Príncipe"
+  },
+  "-MqFQG-upP_16boZmRvR" : {
+    "correct" : false,
+    "country" : "Uganda"
+  },
+  "-MqFQHHAG5yk05nIdGY2" : {
+    "correct" : true,
+    "country" : "Burkina Faso"
+  },
+  "-MqFQI6GvK0fTzKomuz2" : {
+    "correct" : true,
+    "country" : "Angola"
+  },
+  "-MqFQIz1reEyXMRYLT04" : {
+    "correct" : false,
+    "country" : "Burundi"
+  },
+  "-MqFQKkGOP7dp8rvgXfp" : {
+    "correct" : false,
+    "country" : "Ethiopia"
+  },
+  "-MqFQLRdR_A5_yKY6VPp" : {
+    "correct" : true,
+    "country" : "Mozambique"
+  },
+  "-MqFQM4lcwOASIII_Ztk" : {
+    "correct" : false,
+    "country" : "Zambia"
+  },
+  "-MqFQNI8o8Stcl-_0Z8c" : {
+    "correct" : true,
+    "country" : "São Tomé and Príncipe"
+  },
+  "-MqFQO-8eMVXo0WbS7Vf" : {
+    "correct" : false,
+    "country" : "Uganda"
+  },
+  "-MqFQOs0B9_ln-oSXqrE" : {
+    "correct" : true,
+    "country" : "Burundi"
+  },
+  "-MqFQPU81mn-KhMPLAmf" : {
+    "correct" : false,
+    "country" : "Ethiopia"
+  },
+  "-MqFQQOdRPYnTdJq6sRo" : {
+    "correct" : false,
+    "country" : "Zambia"
+  },
+  "-MqFQQzGZQmLt1UmfpCj" : {
+    "correct" : false,
+    "country" : "Uganda"
+  },
+  "-MqFQROWPvNiHnHp5yq4" : {
+    "correct" : false,
+    "country" : "Ethiopia"
+  },
+  "-MqFQRqlYH797m4hrVkz" : {
+    "correct" : false,
+    "country" : "Zambia"
+  },
+  "-MqFQSgl8mGBW9oSQUO0" : {
+    "correct" : false,
+    "country" : "Uganda"
+  },
+  "-MqFQT993Fc0k_sqMhI5" : {
+    "correct" : false,
+    "country" : "Ethiopia"
+  },
+  "-MqFQTh8C34VRsLLQNnU" : {
+    "correct" : false,
+    "country" : "Zambia"
+  },
+  "-MqFQU7dx2S4x-DZC5Of" : {
+    "correct" : false,
+    "country" : "Uganda"
+  },
+  "-MqFQUT1POoAfUJXrZua" : {
+    "correct" : false,
+    "country" : "Ethiopia"
+  }
+}
